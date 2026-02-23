@@ -1,0 +1,33 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is '1Master_Thesis.blg'
+[71] biber-MSWIN64:342> INFO - === 
+[97] Biber.pm:421> INFO - Reading '1Master_Thesis.bcf'
+[180] Biber.pm:1002> INFO - Found 17 citekeys in bib section 0
+[190] Biber.pm:4487> INFO - Processing section 0
+[197] Biber.pm:4678> INFO - Looking for bibtex file 'refTULTHESIS.bib' for section 0
+[284] bibtex.pm:1713> INFO - LaTeX decoding ...
+[307] bibtex.pm:1519> INFO - Found BibTeX data source 'refTULTHESIS.bib'
+[318] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[318] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[319] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[319] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[319] bbl.pm:676> INFO - Writing '1Master_Thesis.bbl' with encoding 'UTF-8'
+[319] bbl.pm:779> INFO - Output to 1Master_Thesis.bbl
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:Kowalska2023MABudget' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:MRI_NMR_sensitivity_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:spin_physics_intro_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:DNP_intro_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:https://pubs.acs.org/doi/10.1021/acs.chemrev.2c00534' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:spin_temperature_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:DNP_fundamentals_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:relaxation_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:dissolution_dnp_workflow_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:hyperpolarized_transfer_constraints_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:DNP_mechanisms_review' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:solid_effect_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:cross_effect_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:thermal_mixing_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:larmor_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:cryogenic_microwave_design_ref' (section 0)
+[319] Biber.pm:132> WARN - I didn't find a database entry for 'TODO:dnp_buildup_model_ref' (section 0)
+[319] Biber.pm:134> INFO - WARNINGS: 17

@@ -1,0 +1,641 @@
+% !TEX program = xelatex
+
+\documentclass[FM,DP,EN,twoside]{tulthesis}
+
+\newcommand{\verze}{2.3}
+
+\usepackage{polyglossia}
+%\setdefaultlanguage{czech} % comment when English is preferred
+\setdefaultlanguage{english} % comment when Czech is preferred
+
+
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{setspace}
+
+\usepackage{siunitx}
+\sisetup{detect-all}
+\usepackage{amsmath}
+
+
+% příkazy specifické pro tento dokument / specific commands for this document
+\newcommand{\argument}[1]{{\ttfamily\color{\tulcolor}#1}}
+\newcommand{\argumentindex}[1]{\argument{#1}\index{#1}}
+\newcommand{\prostredi}[1]{\argumentindex{#1}}
+\newcommand{\prikazneindex}[1]{\argument{\textbackslash #1}}
+\newcommand{\prikaz}[1]{\prikazneindex{#1}\index{#1@\textbackslash #1}}
+\newenvironment{myquote}{\begin{list}{}{\setlength\leftmargin\parindent}\item[]}{\end{list}}
+\newenvironment{listing}{\begin{myquote}\color{\tulcolor}}{\end{myquote}}
+\sloppy
+
+% deklarace pro titulní stránku / title page declaration
+\TULtitle{Design and Development of a Compact Dynamic Nuclear Polarization System for Medical Applications}{Design and Development of a Compact Dynamic Nuclear Polarization System for Medical Applications}
+\TULauthor{Bc. Michal Sojka}
+
+% pro bakalářské, diplomové a disertační práce / for bachelor, master theses and dissertation
+\TULprogramme{N0714A150003}{Mechatronics}{Mechatronics}
+%\TULbranch{B0714A270001CH}{Chytré technologie}{Chytré technologie}
+\TULsupervisor{Ing. Ekaterina Vedel}
+\TULconsultant{Mgr. Michael Pešek, Ph.D.}
+%\TULconsultant{doc. RNDr. Druhý Konzultant, Ph.D.}
+%\TULconsultant{doc. RNDr. Třetí Konzultant, Ph.D.}
+\TULyear{2026}
+
+% pro habilitační práce / habilitation thesis
+%\TULbranch{}{Technická kybernetika}{Technical cybernetics}
+%\TULyear{2022}
+
+% Použití bibLateXu, pracuje s ISO stylem
+% BibLaTeX settings, works with ISO style
+\usepackage[ 
+    backend=biber
+     % ,style=iso-authoryear % styl vyžaduje FZS TUL , místo příkazu \cite{} je potřeba využít \parencite{} (sazba kulatých závorek) / style required by FZS TUL use \parencite{} instead of \cite{}
+    ,style=iso-numeric
+    %,style=numeric
+    %,sortlocale=cs_CZ
+    ,sorting=nyt %seřazeno jméno, rok, titul
+    ,autolang=other
+    ,bibencoding=UTF8
+    %,urldate=edtf
+    ,maxcitenames=2 %maximum v textu citovaných jmen
+    ,maxbibnames=3 %maximum v seznamu vyjmenovaných autorů
+    ]{biblatex}
+\addbibresource{refTULTHESIS.bib}% vložení seznamu literárních zdrojů v bib formátu / input of references in bib format
+
+% Úprava iso-numeric.bbx v souladu s požadavky TUL hranaté závorky v číslovaném seznamu / Modification of iso-numeric.bbx in accordance with TUL requirements of square brackets in a numbered list
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+
+% Formátování podle pokynů FZS, při využití stylu iso-authoryear, čárka mezi jmény a poslední jméno se spojkou a / special requirements of FZS TUL 
+\DeclareDelimFormat{multinamedelim}{\addcomma\space}
+
+\DeclareDelimFormat{finalnamedelim}{%
+  \ifnumgreater{\value{liststop}}{2}{\finalandcomma}{}%
+  \addspace\bibstring{and}\space}
+
+\DeclareNameAlias{author}{family-given/given-family} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{csquotes} %užití biblatexu hlasí warnings, důvodem může být použití českých uvozovek v citacích! / solving of problems with Czech quotations
+\urlstyle{same} %sazba url odkazů stejným fontem jako ostatní text, řešení problémů v zalamování hypertextových odkazů v citacích / url in references setting into the same form as text 
+
+\usepackage{listings} %package for sourcode typesetting
+%řešení problémů češtiny např. při sazbě zdrojových kódů / czech special characters in sourcecode typesetting
+
+\usepackage{hyperref}
+\usepackage{afterpage}
+
+\makeatletter
+\lst@InputCatcodes
+\def\lst@DefEC{%
+ \lst@CCECUse \lst@ProcessLetter
+  ^^80^^81^^82^^83^^84^^85^^86^^87^^88^^89^^8a^^8b^^8c^^8d^^8e^^8f%
+  ^^90^^91^^92^^93^^94^^95^^96^^97^^98^^99^^9a^^9b^^9c^^9d^^9e^^9f%
+  ^^a0^^a1^^a2^^a3^^a4^^a5^^a6^^a7^^a8^^a9^^aa^^ab^^ac^^ad^^ae^^af%
+  ^^b0^^b1^^b2^^b3^^b4^^b5^^b6^^b7^^b8^^b9^^ba^^bb^^bc^^bd^^be^^bf%
+  ^^c0^^c1^^c2^^c3^^c4^^c5^^c6^^c7^^c8^^c9^^ca^^cb^^cc^^cd^^ce^^cf%
+  ^^d0^^d1^^d2^^d3^^d4^^d5^^d6^^d7^^d8^^d9^^da^^db^^dc^^dd^^de^^df%
+  ^^e0^^e1^^e2^^e3^^e4^^e5^^e6^^e7^^e8^^e9^^ea^^eb^^ec^^ed^^ee^^ef%
+  ^^f0^^f1^^f2^^f3^^f4^^f5^^f6^^f7^^f8^^f9^^fa^^fb^^fc^^fd^^fe^^ff%
+% české znaky
+  ^^^^010c^^^^010d^^^^010e^^^^010f^^^^011a^^^^011b^^^^0147^^^^0148%
+  ^^^^0158^^^^0159^^^^0160^^^^0161^^^^0164^^^^0165%
+  ^^^^016e^^^^016f^^^^017d^^^^017e%
+  ^^00}
+\lst@RestoreCatcodes
+\makeatother
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+
+
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{white},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{blue},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
+
+\linespread{1.2}
+
+
+\begin{document}
+
+%\ThesisStart{zadani-a-prohlaseni.pdf}
+\ThesisStart{male}
+
+\clearpage
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+\clearpage
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+% CZ Abstract
+\begin{abstractCZ}
+
+\end{abstractCZ}
+
+% CZ Keywords
+\begin{keywordsCZ} 
+
+\end{keywordsCZ}
+\thispagestyle{empty}
+\vspace{2cm}
+
+\clearpage
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+% EN Abstract
+\begin{abstractEN}
+Magnetic Resonance Imaging (MRI) is one of the most powerful non-invasive diagnostic tools in modern medicine, yet its sensitivity remains limited by the inherently low nuclear spin polarization achievable at thermal equilibrium. Dynamic Nuclear Polarization (DNP) offers a promising method to overcome this limitation by transferring the high polarization of electron spins to nearby nuclei under low temperature and high magnetic field conditions.
+
+This thesis presents the \textbf{design and development of a compact Dynamic Nuclear Polarization (DNP) system for medical applications}, with the goal of enabling enhanced magnetic resonance imaging sensitivity in biomedical and diagnostic research. The project focuses on the \textit{engineering and mechatronic aspects} of the DNP system, integrating cryogenic, electromagnetic, and microwave components into a compact, modular prototype suitable for use with existing MRI or NMR infrastructure.
+
+The work includes the \textbf{design and simulation of a 2.5~T superconducting solenoid}, ensuring high field homogeneity for efficient polarization transfer, and the \textbf{mechanical and electromagnetic design of a microwave chamber} optimized for uniform power distribution at approximately 70~GHz. A special emphasis is placed on \textbf{cryogenic integration}, achieving operational temperatures near 1~K using a liquid helium cooling system and on the \textbf{mechanical and vacuum interfaces} necessary for operation in a medical or laboratory environment.
+
+Additionally, the thesis explores the \textbf{automation and control of the DNP setup}, including temperature monitoring, and microwave power delivery. The final prototype aims to demonstrate a scalable and cost-effective approach to nuclear hyperpolarization, opening the way for enhanced MRI studies with hyperpolarized stable and radioactive tracers (e.g., \textsuperscript{13}C, \textsuperscript{15}N, \textsuperscript{19}F, or \textsuperscript{18}F).
+
+\end{abstractEN}
+
+% EN Keywords
+\begin{keywordsEN}
+
+\end{keywordsEN}
+
+\clearpage
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+\thispagestyle{empty}
+% Acknowledgement
+\begin{acknowledgement}
+
+\end{acknowledgement}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+% Table of Contents
+\tableofcontents
+
+\clearpage
+
+%Shorts
+\begin{abbrList}
+\textbf{DNP} & Dynamic Nuclear Polarization \\
+\textbf{MRI} & Magnetic Resonance Imaging \\
+\textbf{CERN} & Conseil Européen pour la Recherche Nucléairee \\
+\textbf{NMR} & Nuclear Magnetic Resonance \\
+\textbf{ISOLDE} & Isotope Separator On Line DEvice \\
+\textbf{LHe} & Liquid-Helium \\
+\end{abbrList}
+
+\chapter{Introduction}
+\label{sec:introduction}
+
+This chapter introduces the motivation for a compact Dynamic Nuclear Polarization (DNP) system and outlines the scope of the work performed at CERN (Conseil Européen pour la Recherche Nucléaire, \textit{European Council for Nuclear Research}). Additionally, it provides the project's high-level context, summarizes the thesis objectives, and explains the document's structure.
+
+
+
+
+\section{Motivation and Problem Statement}
+\label{sec:motivation-problem-statement}
+
+Magnetic Resonance Imaging (MRI) is a non-invasive diagnostic technique whose sensitivity is fundamentally limited by the low thermal equilibrium polarization of nuclear spins. Dynamic nuclear polarization is a well-established approach to increasing nuclear polarization by transferring polarization from electron spins under microwave irradiation at cryogenic temperatures. This enables a significantly enhanced signal-to-noise ratio in downstream Nuclear Magnetic Resonance (NMR) and MRI experiments.
+The practical adoption of DNP-enhanced workflows is strongly influenced by system complexity, physical footprint and operational robustness. In particular, compact implementations must satisfy stringent requirements regarding magnetic field quality, cryogenic performance, microwave delivery and mechanical/vacuum integration while remaining serviceable and safe for routine operation.
+
+
+\section{Project Background}
+\label{sec:project-background}
+The work presented in this thesis was carried out at CERN (Conseil Européen pour la Recherche Nucléaire, \textit{European Council for Nuclear Research}) in the context of a funded development activity aiming to enable novel tracers for Nuclear Magnetic Resonance and Magnetic Resonance Imaging by using dynamic nuclear polarization in a compact, low-cost, and versatile setup \cite{TODO:Kowalska2023MABudget}. The project builds on CERN know-how originating from polarised target technology, cryogenic engineering, and superconducting magnet development, and targets an instrument concept that can be deployed with a small superconducting solenoid and a cryogenic insert compatible with commercially available liquid-helium (LHe) dewars commonly present in NMR/MRI laboratories \cite{TODO:Kowalska2023MABudget}.
+
+From a system perspective, the intended operational principle follows the established dissolution-DNP workflow: a sample containing a radical is polarized in the solid state at cryogenic temperature under microwave irradiation, subsequently rapidly heated and dissolved, and then transferred for downstream measurement or imaging. The central engineering challenge addressed in this thesis is the realization of such functionality under strict geometric and integration constraints, requiring robust interfaces between the superconducting magnet, the microwave delivery chain and cavity, the cryogenic and vacuum subsystem, and the mechanical structure enabling repeatable assembly and serviceability.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{figures/dnp_workflow_concept.png}
+  \caption[Conceptual Dissolution-DNP Workflow]{Conceptual dissolution-DNP workflow illustrating the main operational steps: sample preparation, polarization at cryogenic temperature under microwave irradiation, rapid dissolution, and transfer for downstream acquisition and processing. Adapted from \cite{TODO:Kowalska2023MABudget}.}
+  \label{fig:dnp-workflow-concept}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/dnp_insert_dewar_concept.png}
+  \caption[Compact Insert Concept For LHe Dewar]{Conceptual integration of a compact DNP insert into a commercial LHe dewar, showing the main building blocks relevant for engineering integration: cryogenic insert, small superconducting magnet, microwave guide, and a heating stage for rapid sample melting/dissolution. Adapted from \cite{TODO:Kowalska2023MABudget}.}
+  \label{fig:dnp-insert-dewar-concept}
+\end{figure}
+
+\section{Reader Guidance}
+\label{sec:engineering-scope-reader-guidance}
+Although the overall purpose of the developed system is closely connected to experimental physics and magnetic resonance methods, this thesis is written primarily from an engineering perspective. Only the physical phenomena relevant to Dynamic Nuclear Polarization and low-temperature operation are introduced at a level necessary to motivate the design requirements and to support engineering decisions. The main emphasis is placed on system integration, interfaces, mechanical and cryogenic constraints, microwave delivery, verification methodology, and practical implementation aspects.
+
+The author's contributions to the project focus on early-stage engineering development rather than detailed theoretical or experimental physics analyses. Consequently, the discussion intentionally avoids deeper derivations and specialized physics interpretations beyond what is necessary for a technically consistent description of the system and its constraints.
+
+\section{Objectives and Scope}
+\label{sec:objectives-scope}
+
+The main objective of this thesis is to design and validate core subsystems of a compact DNP setup under CERN integration constraints. The work is structured into the following specific goals:
+\begin{enumerate}
+  \item Define system-level requirements and interfaces based on the intended operational scenario and physical constraints.
+  \item Develop the superconducting magnet concept and evaluate magnetic field homogeneity in the target sample region.
+  \item Design the microwave chamber and interfaces for microwave delivery, including manufacturability and integration aspects.
+  \item Address cryogenic, vacuum, and mechanical integration constraints, including sealing and thermal anchoring considerations.
+  \item Propose an automation and control concept suitable for safe operation and traceable measurements.
+  \item Plan and execute subsystem-level verification activities where feasible within the project timeframe.
+\end{enumerate}
+
+\section{Target Requirements and Design Specifications}
+\label{sec:target-requirements-design-specifications}
+
+The project targets a compact, modular DNP insert compatible with commercial liquid-helium (LHe) dewars, with key specifications driven by the operational needs of solid-state polarization at cryogenic temperature under microwave irradiation, followed by rapid melting/dissolution and transfer to downstream measurement. The primary engineering requirements used throughout this thesis are summarized in Table~\ref{table:target-requirements}.
+
+
+\begin{table}[h]
+  \centering
+  \caption[Target Requirements for the Compact DNP Insert]{Target requirements and design specifications for the compact DNP insert as defined at project level. Values are taken from the project MA Budget submission form.}
+  \label{table:target-requirements}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Subsystem / Parameter} & \textbf{Target Requirement} \\
+    \hline
+    Cryogenics: Base temperature & $\sim \SI{1.5}{\kelvin}$ \\
+    \hline
+    Cryogenics: Sample loading temperature & $< \SI{100}{\kelvin}$  \\
+    \hline
+    Magnet: Field strength & $> \SI{1}{\tesla}$ \\
+    \hline
+    Magnet: Candidate operating points & \SI{2.5}{\tesla} @ \SI{70}{\giga\hertz} \\
+    \hline
+    Magnet: Homogeneity & around 100 ppm  \\
+    \hline
+    Microwaves: Frequency range & $> \SI{30}{\giga\hertz}$ \\
+    \hline
+    Microwaves: Output power & $> \SI{1}{\watt}$ \\
+    \hline
+    Microwave cavity: Field distribution & Microwave power distribution over sample\\
+    \hline
+    Dissolution / heating stage & Melt/liquify sample in a few seconds \\
+    \hline
+    Pumping system (for \SI{1.5}{\kelvin}) & Pumping group enabling evaporative cooling \\
+    \hline
+    Integration: Host infrastructure & Fit into commercial LHe dewar \\
+    \hline
+  \end{tabular}
+\end{table}
+
+The thesis chapters that follow translate these top-level targets into subsystem-level design requirements and verification criteria. In particular, the magnet design is evaluated against the field strength and homogeneity targets, the microwave chamber is developed to support the required frequency/power delivery and field distribution in the sample region, and the cryogenic/vacuum-mechanical integration is constrained by the temperature target and the host dewar compatibility requirement.
+
+
+\section{Thesis Structure}
+\label{sec:thesis-structure}
+
+The remainder of this thesis is organized as follows. Chapter~\ref{sec:theoretical-technological-background} summarizes the theoretical and technological background required to justify the key design requirements. Chapter~\ref{sec:system-requirements-design-constraints} formulates the system requirements and integration constraints. The magnet and microwave chamber developments are presented in Chapter~\ref{sec:superconducting-magnet-design} and Chapter~\ref{sec:microwave-chamber-development}, respectively. Cryogenic, vacuum, and mechanical integration topics are covered in Chapter~\ref{sec:cryogenic-vacuum-mechanical-integration}, followed by the automation and control concept in Chapter~\ref{sec:automation-and-control-system}. Verification activities and achieved results are summarized in Chapter~\ref{sec:prototype-implementation-verification} and Chapter~\ref{sec:results-performance-evaluation}. Finally, Chapter~\ref{sec:discussion-future-work} discusses limitations and future work, and Chapter~\ref{sec:conclusion} concludes the thesis.
+
+
+\chapter{Theoretical and Technological Background}
+\label{sec:theoretical-technological-background}
+
+This chapter summarizes the theoretical and technological background required to motivate the key design choices for a compact dynamic nuclear polarization system. The focus is placed on the minimum set of concepts needed to translate the intended application into engineering requirements, namely the sensitivity limitations of magnetic resonance imaging and nuclear magnetic resonance, the principle of polarization enhancement via DNP under microwave irradiation at cryogenic temperature, and the resulting constraints on magnetic field quality, temperature, and microwave delivery. The presented material intentionally remains at a conceptual level and serves as a basis for the requirement definition in Chapter~\ref{sec:system-requirements-design-constraints} and for the subsequent subsystem development and verification chapters.
+
+
+
+\section{Magnetic Resonance Imaging Sensitivity and Polarization}
+\label{sec:mri-sensitivity-polarization}
+Magnetic resonance methods are based on detecting the macroscopic magnetization of a very large number of nuclear spins. Each nucleus carrying a magnetic moment can be viewed as a microscopic ``compass needle'' with a preferred interaction with an applied static magnetic field $B_0$. In practice, the signal measured in Nuclear Magnetic Resonance (NMR) and Magnetic Resonance Imaging (MRI) is proportional to the net (vector-summed) magnetization of the sample, and therefore proportional to how strongly the spin ensemble is biased to align with $B_0$. This bias is quantified by the nuclear spin polarization and it is the fundamental reason why magnetic resonance methods are inherently sensitivity-limited under normal thermal equilibrium conditions \cite{TODO:MRI_NMR_sensitivity_ref}.
+
+From an engineering standpoint, this section provides the minimum intuition required to understand why the system requirements in later chapters are dominated by three parameters: magnetic field strength and homogeneity, temperature, and time. Field strength and temperature set the achievable thermal equilibrium polarization, while time enters through relaxation processes that continuously drive the system back toward equilibrium.
+
+\subsection{Intuitive Picture of Net Magnetization (Beer Analogy)}
+\label{subsec:intuitive-net-magnetization-beer-analogy}
+A useful mental model is to separate the problem into two levels: (i) what individual spins do, and (ii) what the large ensemble looks like when averaged. Without an external magnetic field, spins are oriented randomly due to thermal motion, so their contributions cancel and the ensemble magnetization is approximately zero. When a static field $B_0$ is applied, only discrete orientations (energy states) are allowed for a spin-$\frac{1}{2}$ nucleus, and the ensemble develops a small population imbalance: slightly more spins occupy the lower-energy state aligned with the field than the higher-energy state opposed to the field. This imbalance produces a non-zero net magnetization along $B_0$, which is the starting point of all NMR/MRI measurements \cite{TODO:spin_physics_intro_ref}.
+
+A (mildly unfair) engineering analogy is to imagine the spins as a crowd after work with ``random objectives'' (no field): the crowd's average direction is zero because everyone walks somewhere else. Applying $B_0$ is like placing two clearly marked exits on the wall: ``\(\alpha\)'' (lower-energy, easier door) and ``\(\beta\)'' (higher-energy, slightly harder door). At room temperature, most people still move randomly, but there is a tiny statistical preference for the easier door. The result is not that the crowd suddenly becomes perfectly organised; rather, you get a very small net bias. In magnetic resonance, that small bias is exactly the valuable part --- and also the reason why the signal is weak unless additional polarization methods such as Dynamic Nuclear Polarization (DNP) are used \cite{TODO:DNP_intro_ref}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/net_magnetization_beer_analogy.png}
+  \caption[Net Magnetization With and Without a Static Field]{Illustration of the net magnetization concept. Without an external field, spin orientations are random and the ensemble magnetization is approximately zero ($M=0$). In an applied static field $B_0$, the allowed spin states split into a lower-energy \(\alpha\) state and a higher-energy \(\beta\) state for a spin-$\frac{1}{2}$ nucleus, leading to a small population imbalance and a non-zero net magnetization ($M\neq 0$). Adapted from \cite{TODO:https://pubs.acs.org/doi/10.1021/acs.chemrev.2c00534}.}
+  \label{fig:net-magnetization-beer}
+\end{figure}
+
+\subsection{Thermal Equilibrium Polarization}
+\label{subsec:thermal-equilibrium-polarization}
+For a spin-$\frac{1}{2}$ nucleus in a static magnetic field $B_0$, the thermal equilibrium polarization $P_\mathrm{th}$ can be expressed as \cite{TODO:spin_temperature_ref}:
+\begin{equation}
+P_\mathrm{th} = \tanh\!\left(\frac{\gamma \hbar B_0}{2 k_\mathrm{B} T}\right),
+\label{eq:thermal-polarization}
+\end{equation}
+where $\gamma$ is the gyromagnetic ratio of the nucleus in \si{\radian\per\second\per\tesla}, $\hbar$ is the reduced Planck constant in \si{\joule\second}, $k_\mathrm{B}$ is the Boltzmann constant in \si{\joule\per\kelvin}, and $T$ is the absolute temperature in \si{\kelvin}. For typical operating conditions, the argument of the hyperbolic tangent is small and the polarization is approximately linear:
+\begin{equation}
+P_\mathrm{th} \approx \frac{\gamma \hbar B_0}{2 k_\mathrm{B} T}
+\qquad \text{for} \qquad \frac{\gamma \hbar B_0}{2 k_\mathrm{B} T} \ll 1.
+\label{eq:thermal-polarization-approx}
+\end{equation}
+
+Equations~\ref{eq:thermal-polarization}--\ref{eq:thermal-polarization-approx} capture the scaling that is directly relevant for system engineering: increasing $B_0$ and decreasing $T$ increases the available polarization and therefore the available signal. In a compact system, however, magnet dimensions, cryogenic complexity, and integration interfaces limit how far $B_0$ and $T$ can be pushed in practice. DNP addresses this limitation by transferring polarization from electron spins to nuclear spins under microwave irradiation, effectively creating a much larger nuclear polarization than thermal equilibrium would provide at the same $B_0$ and $T$ \cite{TODO:DNP_fundamentals_ref}.
+
+\subsection{Spin-Lattice Relaxation and Time Constraints}
+\label{subsec:relaxation-time-constraints}
+Spin-lattice relaxation describes the tendency of the nuclear spin system to return toward thermal equilibrium by exchanging energy with its environment. The characteristic time constant is the longitudinal relaxation time $T_1$, which governs the evolution of the longitudinal magnetization $M_z$ toward its equilibrium value $M_0$ \cite{TODO:relaxation_ref}:
+\begin{equation}
+M_z(t) = M_0 + \left(M_z(0) - M_0\right)\exp\!\left(-\frac{t}{T_1}\right),
+\label{eq:t1-recovery}
+\end{equation}
+where $t$ is time in \si{\second}. In practical terms, $T_1$ sets the ``expiration time'' of any enhanced polarization once the sample conditions change. This is particularly relevant for dissolution-DNP workflows, where the sample is rapidly heated and transferred: while the engineering system is moving the sample from the polarizer to downstream acquisition, nature is continuously moving the polarization back toward thermal equilibrium \cite{TODO:dissolution_dnp_workflow_ref}.
+
+For system engineering, this implies that time-dependent losses must be managed by design. Heating/dissolution should be fast and repeatable, transfer dead volumes and flow impedance should be minimized, and operational procedures should be designed to reduce unnecessary delays. In addition, the temperature profile and magnetic field environment along the sample path influence relaxation, and therefore must be treated as part of the integrated design rather than as isolated subsystem details \cite{TODO:hyperpolarized_transfer_constraints_ref}.
+
+
+
+\section{Principles of Dynamic Nuclear Polarization}
+\label{sec:principles-of-dnp}
+Dynamic Nuclear Polarization (DNP) is a technique that increases nuclear spin polarization by transferring polarization from electron spins to nuclear spins. The engineering relevance of DNP follows directly from the polarization scaling introduced in section~\ref{sec:mri-sensitivity-polarization}: because the electron gyromagnetic ratio is much larger than the nuclear gyromagnetic ratio, electron spins can reach a substantially higher thermal equilibrium polarization under the same magnetic field and temperature. DNP uses microwave irradiation to drive transitions that couple the electron and nuclear spin systems, thereby enabling nuclear polarization levels far above the thermal equilibrium value \cite{TODO:DNP_fundamentals_ref}.
+
+In practical solid-state implementations, DNP requires (i) a paramagnetic agent providing unpaired electrons (typically a radical), (ii) a cryogenic environment to maximize electron polarization and reduce relaxation losses, (iii) a magnetic field defining the resonance frequencies, and (iv) a microwave delivery system that provides sufficient and stable power at the required frequency. The following subsections summarize the underlying mechanisms at a conceptual level and translate them into engineering constraints that influence the design choices presented in later chapters.
+
+\subsection{DNP Mechanisms Relevant for Solid Samples}
+\label{subsec:dnp-mechanisms-solid}
+Several microscopic mechanisms can enable polarization transfer from electrons to nuclei in solids. The detailed regime depends on the electron spin resonance linewidth, the nuclear Larmor frequency, the type and concentration of the radical, and the operating field and temperature \cite{TODO:DNP_mechanisms_review}. For the purposes of this thesis, it is sufficient to distinguish the following commonly referenced mechanisms:
+
+\begin{itemize}
+  \item \textbf{Solid Effect:} polarization transfer is driven by microwave irradiation at frequencies offset from the electron resonance by approximately the nuclear Larmor frequency. Conceptually, this corresponds to ``forbidden'' transitions in which electron and nuclear spins flip in a correlated manner. It is typically associated with relatively narrow electron resonance lines \cite{TODO:solid_effect_ref}.
+  \item \textbf{Cross Effect:} the transfer involves two coupled electron spins and one nuclear spin. The mechanism becomes efficient when the difference between the resonance frequencies of two electrons matches the nuclear Larmor frequency. In many practical high-field DNP systems with suitable radicals, the cross effect is often the dominant pathway \cite{TODO:cross_effect_ref}.
+  \item \textbf{Thermal Mixing:} in systems with high electron spin concentration and broad electron resonance, the electron spin ensemble can be treated as an effective ``spin reservoir'' with a spin temperature, enabling polarization exchange with nuclei. This mechanism is often discussed for certain radicals and conditions where strong electron-electron interactions are present \cite{TODO:thermal_mixing_ref}.
+\end{itemize}
+
+From an engineering perspective, the important point is that these mechanisms impose requirements on microwave frequency stability and tuning capability, magnetic field stability and homogeneity in the sample region, and on the achievable microwave magnetic field distribution inside the cavity. The thesis therefore does not attempt to select or optimize a radical chemistry; instead, it focuses on the hardware infrastructure that allows relevant operating conditions to be reached and controlled repeatably.
+
+\subsection{Microwave Irradiation at Cryogenic Temperature}
+\label{subsec:mw-irradiation-cryogenic}
+Microwave irradiation is the actuator that enables DNP: it drives electron spin transitions at (or near) the electron Larmor frequency. For a magnetic field $B_0$, the Larmor angular frequency $\omega$ of a spin species is given by \cite{TODO:larmor_ref}:
+\begin{equation}
+\omega = \gamma B_0,
+\label{eq:larmor-angular-frequency}
+\end{equation}
+where $\gamma$ is the gyromagnetic ratio in \si{\radian\per\second\per\tesla}. Using the corresponding frequency $f=\omega/(2\pi)$, this relationship directly links the selected magnet operating field to the required microwave frequency range for electron spin resonance. Consequently, early system-level decisions (e.g., selecting a \SI{2.5}{\tesla} vs.\ \SI{3.35}{\tesla} operating point) propagate into concrete engineering requirements on microwave sources, waveguides, vacuum feedthroughs, and cavity geometry \cite{TODO:Kowalska2023MABudget}.
+
+Cryogenic temperature is essential for two reasons. First, it increases electron polarization, providing a stronger ``polarization source'' for transfer to nuclei. Second, it generally improves polarization retention by reducing relaxation rates, which is critical because DNP build-up is not instantaneous. For implementation, this means the microwave chain must remain functional and stable under cryogenic and vacuum boundary conditions, and the cavity region must be designed to distribute microwave power efficiently at the sample location while managing losses and undesired heating in nearby components \cite{TODO:cryogenic_microwave_design_ref}.
+
+\subsection{Polarization Build-Up and Expected Enhancement}
+\label{subsec:polarization-buildup-enhancement}
+Under constant DNP conditions (fixed $B_0$, temperature, radical system, and microwave irradiation), the nuclear polarization typically approaches a steady-state value over time. A common engineering-level model is an exponential build-up \cite{TODO:dnp_buildup_model_ref}:
+\begin{equation}
+P(t) = P_\infty \left(1 - \exp\!\left(-\frac{t}{T_\mathrm{b}}\right)\right),
+\label{eq:dnp-buildup}
+\end{equation}
+where $P(t)$ is the nuclear polarization at time $t$, $P_\infty$ is the steady-state polarization under the applied DNP conditions, and $T_\mathrm{b}$ is an effective build-up time constant.
+
+For the system design described in this thesis, Equation~\ref{eq:dnp-buildup} provides the key practical implication: achieving a useful polarization requires maintaining stable operating conditions for a non-negligible time, and therefore the cryogenic and microwave subsystems must be designed for reliable steady-state operation. In addition, the achievable enhancement in downstream NMR/MRI depends not only on $P_\infty$ but also on how much polarization is retained during subsequent steps such as rapid heating/dissolution and transfer, which motivates a strong emphasis on minimizing thermal and timing overheads in the integrated system design \cite{TODO:dissolution_dnp_workflow_ref}.
+
+
+
+\section{System-Level Requirements for a Compact DNP Setup}
+\label{sec:system-level-requirements-theory}
+
+\subsection{Magnetic Field Strength and Homogeneity Requirements}
+\label{subsec:field-strength-homogeneity}
+\subsection{Cryogenic Temperature Requirements}
+\label{subsec:cryogenic-temperature-requirements}
+\subsection{Microwave Frequency and Power Requirements}
+\label{subsec:mw-frequency-power-requirements}
+
+\chapter{System Requirements and Design Constraints}
+\label{sec:system-requirements-design-constraints}
+\section{Use Case and Operational Scenarios}
+\label{sec:use-case-operational-scenarios}
+\section{Geometrical and Integration Constraints}
+\label{sec:geometrical-integration-constraints}
+\subsection{Insert Envelope and Interfaces}
+\label{subsec:insert-envelope-interfaces}
+\subsection{Compatibility With Dewar/Cryostat Infrastructure}
+\label{subsec:compatibility-dewar-cryostat}
+\section{Functional Requirements}
+\label{sec:functional-requirements}
+\subsection{Sample Handling and Target Region}
+\label{subsec:sample-handling-target-region}
+\subsection{Vacuum and Helium-Tightness Requirements}
+\label{subsec:vacuum-helium-tightness}
+\subsection{Safety and Operational Limits}
+\label{subsec:safety-operational-limits}
+\section{Verification Strategy}
+\label{sec:verification-strategy}
+
+\chapter{Superconducting Magnet Design}
+\label{sec:superconducting-magnet-design}
+\section{Design Rationale and Target Specifications}
+\label{sec:magnet-rationale-specifications}
+\section{Solenoid Geometry and Winding Concept}
+\label{sec:solenoid-geometry-winding}
+\subsection{Coil Geometry Definition}
+\label{subsec:coil-geometry-definition}
+\subsection{Conductor Selection and Current Density Constraints}
+\label{subsec:conductor-selection}
+\section{Magnetic Field Simulation and Homogeneity Evaluation}
+\label{sec:magnet-simulation-homogeneity}
+\subsection{Simulation Setup and Assumptions}
+\label{subsec:magnet-simulation-setup}
+\subsection{Homogeneity Metrics and Evaluation Volume}
+\label{subsec:homogeneity-metrics}
+\subsection{Results and Sensitivity to Tolerances}
+\label{subsec:homogeneity-sensitivity-tolerances}
+% TODO: add Table~\ref{table:magnet-homogeneity-summary} once final values are frozen.
+\section{Mechanical and Cryogenic Considerations}
+\label{sec:magnet-mechanical-cryogenic}
+\subsection{Forces, Supports, and Quench Considerations}
+\label{subsec:forces-supports-quench}
+\subsection{Integration With Cryostat and Current Leads}
+\label{subsec:integration-cryostat-current-leads}
+
+\chapter{Microwave Chamber Development}
+\label{sec:microwave-chamber-development}
+\section{Functional Role and Design Targets}
+\label{sec:mw-role-design-targets}
+\section{RF Architecture and Interfaces}
+\label{sec:rf-architecture-interfaces}
+\subsection{Waveguide Interface and Transitions}
+\label{subsec:waveguide-interface-transitions}
+\subsection{Coupling Strategy and Mode Considerations}
+\label{subsec:coupling-mode-considerations}
+\section{Mechanical Design and CAD Implementation}
+\label{sec:mw-mechanical-design-cad}
+\subsection{Key Dimensions, Tolerances, and Materials}
+\label{subsec:mw-dimensions-tolerances-materials}
+\subsection{Manufacturability and Assembly Constraints}
+\label{subsec:mw-manufacturability-assembly}
+% TODO: include drawing figure placeholders based on your CAD/2D drawing files.
+\section{Electromagnetic Simulation and Power Distribution}
+\label{sec:mw-em-simulation-power-distribution}
+\subsection{Simulation Setup, Boundary Conditions, and Meshing}
+\label{subsec:mw-simulation-setup}
+\subsection{Field Uniformity Metrics in Sample Region}
+\label{subsec:mw-field-uniformity-metrics}
+\subsection{Losses, Heating, and Material Selection Impact}
+\label{subsec:mw-losses-heating-material}
+
+\chapter{Cryogenic, Vacuum, and Mechanical Integration}
+\label{sec:cryogenic-vacuum-mechanical-integration}
+\section{Cryogenic Concept and Temperature Stages}
+\label{sec:cryogenic-concept-temperature-stages}
+\subsection{Heat Loads and Thermal Budget}
+\label{subsec:heat-loads-thermal-budget}
+\subsection{Thermal Anchoring and Wiring/Feedthrough Strategy}
+\label{subsec:thermal-anchoring-feedthroughs}
+\section{Vacuum Interfaces and Sealing Strategy}
+\label{sec:vacuum-interfaces-sealing}
+\subsection{Helium-Tightness and Leak Testing Approach}
+\label{subsec:helium-tightness-leak-testing}
+\subsection{Materials, Surface Treatment, and Cleanliness}
+\label{subsec:materials-surface-cleanliness}
+\section{Mechanical Support, Alignment, and Assembly Procedure}
+\label{sec:mechanical-support-alignment-assembly}
+\subsection{Tolerance Stack-Up and Alignment Features}
+\label{subsec:tolerance-stack-up-alignment}
+\subsection{Serviceability and Modular Replacement}
+\label{subsec:serviceability-modular-replacement}
+
+\chapter{Automation and Control System}
+\label{sec:automation-and-control-system}
+\section{Control Objectives and System Architecture}
+\label{sec:control-objectives-architecture}
+\section{Instrumentation: Sensors and Readout}
+\label{sec:instrumentation-sensors-readout}
+\subsection{Temperature Monitoring}
+\label{subsec:temperature-monitoring}
+\subsection{Pressure/Vacuum Monitoring}
+\label{subsec:pressure-vacuum-monitoring}
+\subsection{Microwave Source Monitoring and Interlocks}
+\label{subsec:mw-monitoring-interlocks}
+\section{Actuation and Interfaces}
+\label{sec:actuation-interfaces}
+\subsection{Heaters and Power Drivers}
+\label{subsec:heaters-power-drivers}
+\subsection{Valves, Pumps, and Pneumatic/Electrical Interfaces}
+\label{subsec:valves-pumps-interfaces}
+\section{Software Concept and Operational States}
+\label{sec:software-concept-operational-states}
+\subsection{State Machine and Safety Interlocks}
+\label{subsec:state-machine-safety-interlocks}
+\subsection{Data Logging and Traceability}
+\label{subsec:data-logging-traceability}
+
+\chapter{Prototype Implementation and Verification}
+\label{sec:prototype-implementation-verification}
+\section{Prototype Build and Assembly Summary}
+\label{sec:prototype-build-assembly-summary}
+\section{Subsystem Tests}
+\label{sec:subsystem-tests}
+\subsection{Magnetic Field Mapping and Homogeneity Verification}
+\label{subsec:field-mapping-homogeneity-verification}
+\subsection{Microwave Line and Cavity Characterization}
+\label{subsec:mw-line-cavity-characterization}
+\subsection{Cryogenic Cooldown Tests and Thermal Performance}
+\label{subsec:cryogenic-cooldown-thermal-performance}
+\subsection{Vacuum and Leak Tests}
+\label{subsec:vacuum-leak-tests}
+\section{System-Level Integration Tests}
+\label{sec:system-level-integration-tests}
+\subsection{End-to-End Operational Procedure (Dry Run)}
+\label{subsec:end-to-end-operational-procedure}
+\subsection{Failure Modes Observed and Mitigations}
+\label{subsec:failure-modes-mitigations}
+
+\chapter{Results and Performance Evaluation}
+\label{sec:results-performance-evaluation}
+\section{Achieved Specifications Versus Requirements}
+\label{sec:achieved-specs-vs-requirements}
+% TODO: add Table~\ref{table:requirements-traceability} summarizing requirement compliance.
+\section{Discussion of Key Engineering Trade-Offs}
+\label{sec:engineering-trade-offs}
+\section{Limitations of the Current Prototype}
+\label{sec:limitations-current-prototype}
+
+\chapter{Discussion and Future Work}
+\label{sec:discussion-future-work}
+\section{Lessons Learned During Development}
+\label{sec:lessons-learned}
+\section{Recommended Design Improvements}
+\label{sec:recommended-improvements}
+\subsection{Magnet and Homogeneity Improvements}
+\label{subsec:magnet-improvements}
+\subsection{Microwave Uniformity and Loss Reduction}
+\label{subsec:mw-improvements}
+\subsection{Cryogenic Robustness and Operational Simplification}
+\label{subsec:cryogenic-improvements}
+\subsection{Automation, Safety, and User Workflow Enhancements}
+\label{subsec:automation-improvements}
+\section{Path Toward Experimental Polarization Demonstration}
+\label{sec:path-toward-polarization-demonstration}
+
+\chapter{Conclusion}
+\label{sec:conclusion}
+\section{Summary of Contributions}
+\label{sec:summary-of-contributions}
+\section{Outlook}
+\label{sec:outlook}
+
+
+
+
+\listoffigures
+
+\listoftables
+
+\lstlistoflistings
+
+% \printbibliography
+% \appendix
+% \chapter{Additional Drawings and Documentation}
+% \label{sec:appendix-drawings}
+% \chapter{Simulation Settings and Raw Outputs}
+% \label{sec:appendix-simulation}
+% \chapter{Bill of Materials and Parts Lists}
+% \label{sec:appendix-bom}
+% \chapter{Control Software Listings}
+% \label{sec:appendix-code}
+
+\end{document}
