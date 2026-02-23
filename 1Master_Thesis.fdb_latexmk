@@ -1,33 +1,33 @@
 # Fdb version 4
-["biber 1Master_Thesis"] 1771878100.87045 "1Master_Thesis.bcf" "1Master_Thesis.bbl" "1Master_Thesis" 1771878176.20581 0
-  "1Master_Thesis.bcf" 1771878175 111132 b373decf0214080682ff81ee7ac6ff0b "xelatex"
+["biber 1Master_Thesis"] 1771878100.87045 "1Master_Thesis.bcf" "1Master_Thesis.bbl" "1Master_Thesis" 1771879015.95208 0
+  "1Master_Thesis.bcf" 1771879015 111132 b373decf0214080682ff81ee7ac6ff0b "xelatex"
   "refTULTHESIS.bib" 1771869042 5948 1caea3b8d40423aba3fef0a47c86e45e ""
   (generated)
   "1Master_Thesis.bbl"
   "1Master_Thesis.blg"
   (rewritten before read)
-["makeindex 1Master_Thesis.idx"] 1771878100.68389 "1Master_Thesis.idx" "1Master_Thesis.ind" "1Master_Thesis" 1771878176.20551 0
-  "1Master_Thesis.idx" 1771878174 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+["makeindex 1Master_Thesis.idx"] 1771878100.68389 "1Master_Thesis.idx" "1Master_Thesis.ind" "1Master_Thesis" 1771879015.95174 0
+  "1Master_Thesis.idx" 1771879013 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
   (generated)
   "1Master_Thesis.ilg"
   "1Master_Thesis.ind"
   (rewritten before read)
-["xdvipdfmx"] 1771878175.68067 "1Master_Thesis.xdv" "1Master_Thesis.pdf" "1Master_Thesis" 1771878176.21477 0
-  "1Master_Thesis.xdv" 1771878175 452580 ef071ef182701c0adc7d0b9f572f5947 "xelatex"
+["xdvipdfmx"] 1771879015.41251 "1Master_Thesis.xdv" "1Master_Thesis.pdf" "1Master_Thesis" 1771879015.96124 0
+  "1Master_Thesis.xdv" 1771879015 453112 066b07a79f7f0db63432ead41211b633 "xelatex"
   (generated)
   "1Master_Thesis.pdf"
   (rewritten before read)
-["xelatex"] 1771878173.44795 "c:/Users/SojkicPC/Downloads/Master Thesis/1Master_Thesis.tex" "1Master_Thesis.xdv" "1Master_Thesis" 1771878176.20615 0
-  "1Master_Thesis.aux" 1771878175 31711 aea9d4bb2b2dd700d1304480864a76c2 "xelatex"
+["xelatex"] 1771879013.11313 "c:/Users/SojkicPC/Downloads/Master Thesis/1Master_Thesis.tex" "1Master_Thesis.xdv" "1Master_Thesis" 1771879015.95241 0
+  "1Master_Thesis.aux" 1771879015 31711 aea9d4bb2b2dd700d1304480864a76c2 "xelatex"
   "1Master_Thesis.bbl" 1771878102 486 76d65a242ec496c9b4361af646ff12cb "biber 1Master_Thesis"
   "1Master_Thesis.ind" 1771878100 0 d41d8cd98f00b204e9800998ecf8427e "makeindex 1Master_Thesis.idx"
-  "1Master_Thesis.lof" 1771878175 667 4e85b30233ee899e470073a1bb004b69 "xelatex"
-  "1Master_Thesis.lol" 1771878175 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "1Master_Thesis.lot" 1771878175 373 aa90adb8aa9bf6e6ec48a8e29e880536 "xelatex"
-  "1Master_Thesis.out" 1771878175 25571 3822cfdfb5e58687cf7d5085e28036ac "xelatex"
-  "1Master_Thesis.run.xml" 1771878175 2584 8abc5c76262cf24bcb110a9bfe5cf47d "xelatex"
-  "1Master_Thesis.tex" 1771878172 41511 d9691ed6b89e52c112b6d6c2ad2fa3d7 ""
-  "1Master_Thesis.toc" 1771878175 10449 a942f2a23e8851958f4eb1bb5fa74582 "xelatex"
+  "1Master_Thesis.lof" 1771879015 667 4e85b30233ee899e470073a1bb004b69 "xelatex"
+  "1Master_Thesis.lol" 1771879015 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "1Master_Thesis.lot" 1771879015 373 aa90adb8aa9bf6e6ec48a8e29e880536 "xelatex"
+  "1Master_Thesis.out" 1771879015 25571 3822cfdfb5e58687cf7d5085e28036ac "xelatex"
+  "1Master_Thesis.run.xml" 1771879015 2584 8abc5c76262cf24bcb110a9bfe5cf47d "xelatex"
+  "1Master_Thesis.tex" 1771879012 41566 f5e962f5990a3621e6e250bb4fe9b357 ""
+  "1Master_Thesis.toc" 1771879015 10449 a942f2a23e8851958f4eb1bb5fa74582 "xelatex"
   "C:/Users/SojkicPC/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1771877679 27178372 a017cb7854ecf320774e6f0cccd33f6d ""
   "C:/Users/SojkicPC/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768654 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/SojkicPC/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -149,7 +149,7 @@
   "C:/Users/SojkicPC/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/SojkicPC/AppData/Local/Programs/MiKTeX/tex/latex/xltxtra/xltxtra.sty" 1546510394 5871 8a29af4ad9d707b5280738995d050842 ""
   "C:/Users/SojkicPC/AppData/Local/Programs/MiKTeX/tex/xelatex/xunicode/xunicode.sty" 1315551046 205722 8027ed7ab2230086d647802c25f3ee42 ""
-  "c:/Users/SojkicPC/Downloads/Master Thesis/1Master_Thesis.tex" 1771878172 41511 d9691ed6b89e52c112b6d6c2ad2fa3d7 ""
+  "c:/Users/SojkicPC/Downloads/Master Thesis/1Master_Thesis.tex" 1771879012 41566 f5e962f5990a3621e6e250bb4fe9b357 ""
   "figures/dnp_insert_dewar_concept.png" 1771869044 264564 f5a895ef4180be2860ed74c72f30771a ""
   "figures/dnp_workflow_concept.png" 1771869044 303801 fe8f3fcdecc3f8237d846399d43ff826 ""
   "figures/net_magnetization_beer_analogy.png" 1771869044 115127 b2866313a7dfd569c2b1c5fb8de48096 ""
