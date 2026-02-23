@@ -2,3 +2,8 @@
 1Master_Thesis.log
 1Master_Thesis.synctex.gz
 1Master_Thesis.xdv
+
+# Ignore common LaTeX build artifacts (global patterns)
+*.fdb_latexmk
+*.log
+*.xdv
