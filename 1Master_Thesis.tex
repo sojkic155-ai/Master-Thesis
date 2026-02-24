@@ -434,36 +434,169 @@ For the system design described in this thesis, Equation~\ref{eq:dnp-buildup} pr
 
 
 
+% Outline:
+% - Write section~\ref{sec:system-level-requirements-theory} as a short bridge from theory to engineering
+% - Provide three subsections (magnet, cryogenics, microwaves) with concise rationale and exact target values
+% - State the selected operating point (2.5 T @ 70 GHz) and defer justification to later chapter
+% - Include a compact requirements table (system-level) without inventing values
+% - Add TODO citations to the project document and key background references
+
 \section{System-Level Requirements for a Compact DNP Setup}
 \label{sec:system-level-requirements-theory}
-Tohle je GIT test 4 4 4 4   , prosím ignoruj tento text.
+The concepts introduced in section~\ref{sec:mri-sensitivity-polarization} and section~\ref{sec:principles-of-dnp} translate into a small set of system-level requirements that dominate the engineering design of a compact Dynamic Nuclear Polarization (DNP) setup. In particular, the achievable polarization and the practical usability of the system are constrained by (i) the static magnetic field strength and its homogeneity in the sample region, (ii) the attainable cryogenic temperature and thermal stability, and (iii) the ability to deliver sufficient microwave power at the required frequency with a suitable field distribution in the cavity. These targets drive the subsystem designs presented in later chapters and are summarized in Table~\ref{table:system-level-requirements-theory} \cite{TODO:Kowalska2023MABudget}.
+
+\begin{table}[h]
+  \centering
+  \caption[Key Target Values for the Compact DNP Setup]{Key target values used as baseline specifications for the compact DNP setup. Values are taken from the project definition \cite{TODO:Kowalska2023MABudget}.}
+  \label{table:key-target-values}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{Parameter} & \textbf{Target Value} & \textbf{Notes} \\
+    \hline
+    Selected operating point & \SI{2.5}{\tesla} @ \SI{70}{\giga\hertz} & Baseline chosen for this thesis (reason discussed later). \\
+    \hline
+    Base temperature & $\sim \SI{1.5}{\kelvin}$ & Flow-type \textsuperscript{4}He cryostat with evaporative cooling. \\
+    \hline
+    Sample loading temperature & $< \SI{100}{\kelvin}$ & Or below the freezing point of the sample formulation. \\
+    \hline
+    Microwave output power & $> \SI{1}{\watt}$ & Output power requirement for efficient irradiation. \\
+    \hline
+  \end{tabular}
+\end{table}
+
+In addition to the target values listed in Table~\ref{table:key-target-values}, several qualitative requirements strongly influence the engineering design. These include a magnetic field strength exceeding \SI{1}{\tesla} with a homogeneity on the order of \SI{100}{ppm} in the sample region, a microwave frequency capability above \SI{30}{\giga\hertz} consistent with the selected operating point, and a microwave cavity design that provides an even microwave field distribution over the sample volume \cite{TODO:Kowalska2023MABudget}. Finally, the dissolution/heating stage is expected to enable melting/dissolution within a few seconds, which introduces time-critical constraints on thermal actuation and operational procedures.
+
+
 \subsection{Magnetic Field Strength and Homogeneity Requirements}
 \label{subsec:field-strength-homogeneity}
+The static magnetic field $B_0$ determines both the baseline thermal polarization (Equation~\ref{eq:thermal-polarization}) and the electron resonance condition that sets the microwave frequency requirement (Equation~\ref{eq:larmor-angular-frequency}). At project level, the magnetic field strength is required to exceed \SI{1}{\tesla}, with candidate operating points of \SI{2.5}{\tesla} and \SI{3.35}{\tesla} discussed in the initial system concept \cite{TODO:Kowalska2023MABudget}. For the work presented in this thesis, the \SI{2.5}{\tesla} operating point is selected as the baseline, corresponding to a \SI{70}{\giga\hertz} microwave chain. The detailed rationale and practical considerations behind this selection are discussed later in the thesis (including equipment availability and integration aspects).
+
+Beyond field strength, the field quality in the sample region is a primary performance driver. A homogeneity on the order of \SI{100}{ppm} is targeted \cite{TODO:Kowalska2023MABudget}. From an engineering perspective, this requirement translates into constraints on coil geometry, winding tolerances, mechanical alignment, and assembly repeatability. In compact solenoid geometries, end effects and tolerance stack-up can dominate the achievable homogeneity, motivating simulation-based evaluation and tolerance sensitivity analyses in the magnet development chapter.
+
 \subsection{Cryogenic Temperature Requirements}
 \label{subsec:cryogenic-temperature-requirements}
+DNP performance benefits from cryogenic operation because electron polarization increases with decreasing temperature and relaxation losses can be reduced. The project targets a base temperature of approximately \SI{1.5}{\kelvin}, implemented using a flow-type \textsuperscript{4}He cryostat with evaporative cooling \cite{TODO:Kowalska2023MABudget}. In addition, the sample loading procedure must maintain the sample below \SI{100}{\kelvin} (or below the freezing point of the specific sample formulation) \cite{TODO:Kowalska2023MABudget}. These targets impose system-level constraints on the thermal design, including heat-load control, thermal anchoring of wiring and microwave components, and helium-tight sealing of interfaces that separate vacuum and helium spaces.
+
+For a compact insert intended for deployment in commercial liquid-helium (LHe) dewars, the cryogenic concept also constrains the mechanical layout and serviceability. Components placed near the cold region must be selected and designed for cryogenic compatibility, while maintaining interfaces that enable assembly, alignment, and leak testing under realistic laboratory conditions.
+
 \subsection{Microwave Frequency and Power Requirements}
 \label{subsec:mw-frequency-power-requirements}
+Microwave irradiation is required to drive the electron spin transitions that enable polarization transfer. The project definition specifies a microwave system operating above \SI{30}{\giga\hertz} with an output power exceeding \SI{1}{\watt} \cite{TODO:Kowalska2023MABudget}. With the selected \SI{2.5}{\tesla} operating point, the baseline microwave frequency for this thesis is \SI{70}{\giga\hertz}. Delivering this power into a cryogenic cavity is an engineering challenge because waveguide and feedthrough losses, impedance mismatches, and mechanical tolerances can significantly affect the power delivered to the sample region.
+
+In addition to power and frequency, the microwave cavity must provide a sufficiently even microwave field distribution over the sample volume \cite{TODO:Kowalska2023MABudget}. This requirement impacts the cavity geometry, coupling strategy, and alignment features. Since microwave losses can introduce undesired heating, the microwave design must also account for loss budgeting and thermal management, particularly in the vicinity of the \SI{1.5}{\kelvin} stage.
+
+% Consistency check: Selected operating point stated once (2.5 T @ 70 GHz) with justification deferred; all numeric targets match project definition; \SI and \ppm require siunitx; citations marked TODO; cross-references to earlier equations included.
 
 \chapter{System Requirements and Design Constraints}
 \label{sec:system-requirements-design-constraints}
+
+This chapter translates the system-level targets introduced in Chapter~\ref{sec:theoretical-technological-background} into concrete engineering requirements and practical design constraints. The compact Dynamic Nuclear Polarization (DNP) setup is treated as an integrated system composed of a superconducting magnet, a microwave delivery chain and cavity, a cryogenic insert compatible with a commercial liquid-helium (LHe) dewar, and supporting vacuum, mechanical, and control subsystems. The purpose of this chapter is to define the operational scenarios, identify the geometrical and interface limitations, specify functional requirements that guide the design work, and describe the verification approach used throughout the thesis \cite{TODO:Kowalska2023MABudget}.
+
 \section{Use Case and Operational Scenarios}
 \label{sec:use-case-operational-scenarios}
+The intended use case is the generation of a hyperpolarized sample using dissolution-DNP principles, with the compact insert operating inside a commercial LHe dewar. From an engineering perspective, the process can be represented as an end-to-end operational workflow with clearly defined states and time-critical transitions. A representative operational sequence is outlined below \cite{TODO:dissolution_dnp_workflow_ref}:
+\begin{enumerate}
+  \item \textbf{Preparation:} A sample containing a suitable paramagnetic agent is prepared and loaded into the sample holder. The system is assembled and checked for mechanical integrity and required connections (microwave, sensors, pumping lines).
+  \item \textbf{Cooldown and Stabilisation:} The insert is cooled down to a base temperature of approximately \SI{1.5}{\kelvin}. The vacuum and pumping configuration is established to enable evaporative cooling, and the thermal stability of the cold stage is verified.
+  \item \textbf{Polarisation Phase:} The superconducting magnet is energised to the selected operating point of \SI{2.5}{\tesla}. Microwave irradiation at \SI{70}{\giga\hertz} with an output power exceeding \SI{1}{\watt} is applied to the cavity region. The sample remains in the target region for a sufficient build-up duration.
+  \item \textbf{Rapid Heating/Dissolution:} A heater stage is activated to melt/liquify the sample within a few seconds. The process must be repeatable and should minimise unnecessary thermal load to the surrounding cryogenic stages.
+  \item \textbf{Transfer and Downstream Use:} The sample is transferred for downstream measurement or imaging. The transfer path and procedure should be designed to minimise polarization loss and to support repeatable operation.
+  \item \textbf{Reset or Shutdown:} Depending on the use case, the system returns to a standby state, prepares for a subsequent run, or is warmed up and disassembled for maintenance.
+\end{enumerate}
+
+In addition to the nominal sequence above, the system must support non-nominal operational scenarios relevant for safe and maintainable laboratory operation:
+\begin{itemize}
+  \item \textbf{Standby / Hold:} Maintaining cryogenic temperature without applying microwaves, for preparation or scheduling reasons.
+  \item \textbf{Maintenance Mode:} Warm state access to the sample region and cavity for cleaning, replacement, or mechanical adjustments.
+  \item \textbf{Emergency Stop:} Immediate microwave shutdown and controlled transition to a safe state (including heater cutoff and safe magnet ramping strategy).
+\end{itemize}
+
 \section{Geometrical and Integration Constraints}
 \label{sec:geometrical-integration-constraints}
+The compact DNP setup is designed as an insert intended to be deployed in existing laboratory infrastructure rather than requiring a dedicated cryostat. As a consequence, the dominant constraints are defined by the geometry and interfaces of commercial LHe dewars, by the practicalities of installation/removal, and by the routing of microwave, pumping, and instrumentation lines. These constraints strongly influence subsystem design choices, especially the mechanical stack-up between the magnet, microwave cavity, and sample region \cite{TODO:Kowalska2023MABudget}.
+
 \subsection{Insert Envelope and Interfaces}
 \label{subsec:insert-envelope-interfaces}
+The insert envelope is limited by the available dewar neck diameter and the permissible overall insert length. The design must therefore meet a strict outer diameter constraint while accommodating internal components such as the magnet bore, microwave guide, thermal shields, wiring, and the sample handling mechanism. The envelope and interface requirements are summarised as follows:
+\begin{itemize}
+  \item \textbf{Outer envelope:} \textbf{TODO: insert maximum outer diameter and usable length based on the target dewar specification}.
+  \item \textbf{Top interface:} A top plate/flange providing mechanical support, alignment references, and routing of services (pumping, electrical, microwave).
+  \item \textbf{Service routing:} Dedicated paths for the microwave guide (waveguide), instrumentation wiring (temperature/pressure sensors), and heater power lines, with provisions for strain relief and repeatable assembly.
+  \item \textbf{Alignment:} Defined alignment features to position the sample region relative to the magnet centre and the microwave cavity with controlled tolerances.
+\end{itemize}
+
+Wherever possible, the mechanical design should support modular replacement of subsystems (e.g., cavity parts, sample holder, feedthrough components) to simplify iteration and maintenance. Interface definitions are treated as first-class design inputs and are referenced throughout the mechanical and subsystem chapters.
+
 \subsection{Compatibility With Dewar/Cryostat Infrastructure}
 \label{subsec:compatibility-dewar-cryostat}
+A key project requirement is compatibility with commercial LHe dewars commonly available in NMR/MRI laboratories \cite{TODO:Kowalska2023MABudget}. The design is therefore constrained by what such infrastructure can realistically provide and what must be integrated into the insert itself. The following compatibility aspects are considered:
+\begin{itemize}
+  \item \textbf{Cryogenic environment:} The insert must operate in a liquid-helium environment and support evaporative cooling to reach $\sim \SI{1.5}{\kelvin}$, which implies suitable pumping connections and helium-tight interfaces.
+  \item \textbf{Installation and handling:} The insert should be installable and removable without specialised equipment beyond common laboratory tools. Handling constraints include weight distribution, clearance above the dewar, and safe routing of external lines.
+  \item \textbf{Pumping infrastructure:} Evaporative cooling requires a pumping group; the system design must define compatible pumping line dimensions and connection standards \cite{TODO:Kowalska2023MABudget}.
+  \item \textbf{Laboratory integration:} The microwave source, control electronics, and safety interlocks must integrate with a typical laboratory environment (cable lengths, access, and shielding).
+\end{itemize}
+
 \section{Functional Requirements}
 \label{sec:functional-requirements}
+Functional requirements describe what the system must achieve during operation, independent of a specific mechanical implementation. In this thesis, functional requirements are expressed in a way that supports verification by analysis, simulation, or measurement. Where exact numeric acceptance criteria are not fixed at the time of writing, they are stated as design intents with a planned verification method and a \textbf{TODO} placeholder for the final threshold.
+
 \subsection{Sample Handling and Target Region}
 \label{subsec:sample-handling-target-region}
+The sample handling concept must provide repeatable placement of the sample into the defined target region inside the magnet and microwave cavity. This target region is the volume for which the field homogeneity and microwave field distribution requirements apply. The functional requirements include:
+\begin{itemize}
+  \item \textbf{Repeatable positioning:} The sample position must be repeatable to within \textbf{TODO: insert positioning tolerance} in order to ensure comparable operating conditions between runs.
+  \item \textbf{Thermal control:} The sample must reach and remain at the base temperature stage during polarisation, with a controlled loading procedure below \SI{100}{\kelvin} (or below the freezing point of the sample formulation) \cite{TODO:Kowalska2023MABudget}.
+  \item \textbf{Workflow readiness:} The design must allow rapid transition between polarisation and heating/dissolution, including electrical and thermal interfaces to the heater stage.
+  \item \textbf{Serviceability:} The sample holder should be removable and inspectable, supporting cleaning and replacement without disassembling the full insert where possible.
+\end{itemize}
+
 \subsection{Vacuum and Helium-Tightness Requirements}
 \label{subsec:vacuum-helium-tightness}
+Stable operation near \SI{1.5}{\kelvin} requires controlled separation of helium spaces and vacuum spaces, as well as robust sealing of interfaces that experience thermal cycling. Helium leaks can compromise cooling performance and introduce operational risks, while air ingress can lead to ice formation and degradation of thermal interfaces. The following functional requirements are therefore defined:
+\begin{itemize}
+  \item \textbf{Helium-tight interfaces:} Interfaces separating helium and vacuum (or helium and ambient) must meet helium leak-tightness requirements suitable for cryogenic operation. \textbf{TODO: insert leak rate acceptance criterion and test method}.
+  \item \textbf{Vacuum integrity:} Vacuum regions must reach the required pressure range for thermal insulation and cryogenic stability. \textbf{TODO: insert pressure target (order-of-magnitude) and measurement approach}.
+  \item \textbf{Thermal cycling robustness:} Seals and joints must remain functional across repeated cool-down and warm-up cycles. Materials and seal types must be compatible with cryogenic temperatures and differential thermal contraction.
+\end{itemize}
+
 \subsection{Safety and Operational Limits}
 \label{subsec:safety-operational-limits}
+The system combines cryogenics, superconducting magnets, microwave power, heaters, and vacuum infrastructure. Even at prototype stage, safe operation requires explicit limits and interlocks. The safety-related functional requirements considered in this thesis include:
+\begin{itemize}
+  \item \textbf{Microwave safety:} Microwave generation must be enabled only when the waveguide chain is properly connected and shielding is in place. An interlock concept should be defined to avoid unintended irradiation.
+  \item \textbf{Thermal safety:} Heater operation must be limited to prevent damage to nearby cryogenic components. Temperature monitoring and cutoff thresholds are required. \textbf{TODO: define maximum heater power and temperature cutoffs}.
+  \item \textbf{Magnet safety:} Magnet energisation must follow a controlled ramp procedure. Quench considerations, mechanical forces, and stored energy management are addressed at design level. \textbf{TODO: define current limits and ramp rate constraints}.
+  \item \textbf{Cryogenic and pressure safety:} Interfaces and lines must be protected against overpressure by appropriate relief/venting strategies. \textbf{TODO: define relief concept and pressure thresholds}.
+\end{itemize}
+
 \section{Verification Strategy}
 \label{sec:verification-strategy}
+Verification is structured as a combination of simulation-based evaluation, inspection, and subsystem-level tests, selected to match the project maturity and the scope of this thesis. The strategy follows a requirement-to-method mapping: each requirement is assigned a verification method (analysis/simulation, inspection, or measurement) and a reference to where the evidence is presented in later chapters. Table~\ref{table:verification-strategy} provides a compact overview.
+
+\begin{table}[h]
+  \centering
+  \caption[Verification Strategy Mapping]{Mapping of key requirements to verification methods and thesis locations. Where verification is not completed within the thesis timeframe, the planned method is stated as a \textbf{TODO}.}
+  \label{table:verification-strategy}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{Requirement} & \textbf{Verification Method} & \textbf{Evidence in Thesis} \\
+    \hline
+    \SI{2.5}{\tesla} operating point, field quality & Simulation / analysis & Chapter~\ref{sec:superconducting-magnet-design} \\
+    \hline
+    Field homogeneity ($\sim \SI{100}{ppm}$) & Simulation; mapping test (\textbf{TODO}) & Chapter~\ref{sec:superconducting-magnet-design} \\
+    \hline
+    $\sim \SI{1.5}{\kelvin}$ cryogenic operation & Thermal design + cooldown test (\textbf{TODO}) & Chapter~\ref{sec:cryogenic-vacuum-mechanical-integration} \\
+    \hline
+    \SI{70}{\giga\hertz}, $> \SI{1}{\watt}$ microwave delivery & RF analysis + bench test (\textbf{TODO}) & Chapter~\ref{sec:microwave-chamber-development} \\
+    \hline
+    Helium-tightness / vacuum integrity & Leak test and pumping test (\textbf{TODO}) & Chapter~\ref{sec:cryogenic-vacuum-mechanical-integration} \\
+    \hline
+    Safety interlocks and operational limits & Review + functional testing (\textbf{TODO}) & Chapter~\ref{sec:automation-and-control-system} \\
+    \hline
+  \end{tabular}
+\end{table}
+
 
 \chapter{Superconducting Magnet Design}
 \label{sec:superconducting-magnet-design}
