@@ -2394,48 +2394,57 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">refTULTHESIS.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">TODO:MRI_NMR_sensitivity_ref</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">TODO:spin_physics_intro_ref</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">TODO:DNP_intro_ref</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">TODO:https://pubs.acs.org/doi/10.1021/acs.chemrev.2c00534</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">TODO:https://pubs.acs.org/doi/10.1021/acs.chemrev.2c00534</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">TODO:spin_temperature_ref</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">TODO:DNP_fundamentals_ref</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">TODO:relaxation_ref</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">TODO:dissolution_dnp_workflow_ref</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">TODO:hyperpolarized_transfer_constraints_ref</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">TODO:DNP_fundamentals_ref</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">TODO:DNP_mechanisms_review</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">TODO:solid_effect_ref</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">TODO:cross_effect_ref</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">TODO:thermal_mixing_ref</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">TODO:larmor_ref</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">TODO:cryogenic_microwave_design_ref</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">TODO:dnp_buildup_model_ref</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">TODO:dissolution_dnp_workflow_ref</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">TODO:dissolution_dnp_workflow_ref</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">TODO:Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">dissolution_dnp_workflow_ref</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">high_performance_DNP</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Iannotti1991ss</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Kruger2001vh</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">spin_physics_intro_ref</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">DNP_intro_ref</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">widrow_ryu_schleicher_subramanian_tsagas_treumann_2011</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">ChemRev2022DNP</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">ChemRev2022DNP</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">bebie_hulliger_2000</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">DNP_fundamentals_ref</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">manabe_strickler_1964</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">relaxation_ref</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">dissolution_dnp_workflow_ref</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">hyperpolarized_transfer_constraints_ref</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">DNP_fundamentals_ref</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">abragam_goldman_1978</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">DNP_mechanisms_review</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">solid_effect_ref</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">cross_effect_ref</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">thermal_mixing_ref</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">larmor_ref</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">cryogenic_microwave_design_ref</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">feynman_1955</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">dissolution_dnp_workflow_ref</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">dissolution_dnp_workflow_ref</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">electron_gyromagnetic_ratio_ref</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">electron_gyromagnetic_ratio_ref</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">DNP_fundamentals_ref</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">dissolution_dnp_workflow_ref</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">feynman_1955</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">hyperpolarized_tracers_review</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">PET_hyperpolarization_ref</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">tempo_dnp_ref</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">Kowalska2023MABudget</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">froes_qian_mitsuo_niinomi_2019</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">ernst_1968</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">wallenberger_bingham_2010</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
@@ -2469,4 +2478,14 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nyt/global//global/global/global"
+                type="entry"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

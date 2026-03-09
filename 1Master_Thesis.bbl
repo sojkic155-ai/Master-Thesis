@@ -16,5 +16,1333 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{abragam_goldman_1978}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=804de7600ad3e74e5944aa0afab9b5b0}{%
+           family={Abragam},
+           familyi={A\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=03e1d6123159ce9d32fdeb464dc25a96}{%
+           family={Goldman},
+           familyi={G\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \strng{fullhash}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \strng{fullhashraw}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \strng{bibnamehash}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \strng{authorbibnamehash}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \strng{authornamehash}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \strng{authorfullhash}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \strng{authorfullhashraw}{fe9ebd32fef7c3a3f5e15f5aa8f9e724}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reports on Progress in Physics}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Principles of dynamic nuclear polarisation}
+      \field{volume}{41}
+      \field{year}{1978}
+      \field{pages}{395\bibrangedash 467}
+      \range{pages}{73}
+      \verb{doi}
+      \verb https://doi.org/10.1088/0034-4885/41/3/002
+      \endverb
+    \endentry
+    \entry{DNP_fundamentals_ref}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=4afff4591dd3a8cb520f3408e7ff8d01}{%
+           family={Abraham},
+           familyi={A\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=878de29dd1aa164d734e2ae994236e54}{%
+           family={Mccausland},
+           familyi={M\bibinitperiod},
+           given={M\bibnamedelima A\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=675b48155a5aaa82c05fca9baf25de16}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={F\bibnamedelima N\bibnamedelima H},
+           giveni={F\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1253ab24ca4ffaa6eb31210dbbaae01}
+      \strng{fullhash}{3d8b897e73477af295c432c982f4342d}
+      \strng{fullhashraw}{3d8b897e73477af295c432c982f4342d}
+      \strng{bibnamehash}{3d8b897e73477af295c432c982f4342d}
+      \strng{authorbibnamehash}{3d8b897e73477af295c432c982f4342d}
+      \strng{authornamehash}{b1253ab24ca4ffaa6eb31210dbbaae01}
+      \strng{authorfullhash}{3d8b897e73477af295c432c982f4342d}
+      \strng{authorfullhashraw}{3d8b897e73477af295c432c982f4342d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{11}
+      \field{title}{Dynamic nuclear polarization}
+      \field{volume}{2}
+      \field{year}{1959}
+    \endentry
+    \entry{dissolution_dnp_workflow_ref}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=54abb762154cd169b3fa1035f7128f1d}{%
+           family={Ardenkjaer-Larsen},
+           familyi={A\bibinithyphendelim L\bibinitperiod},
+           given={Jan\bibnamedelima Henrik},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{54abb762154cd169b3fa1035f7128f1d}
+      \strng{fullhash}{54abb762154cd169b3fa1035f7128f1d}
+      \strng{fullhashraw}{54abb762154cd169b3fa1035f7128f1d}
+      \strng{bibnamehash}{54abb762154cd169b3fa1035f7128f1d}
+      \strng{authorbibnamehash}{54abb762154cd169b3fa1035f7128f1d}
+      \strng{authornamehash}{54abb762154cd169b3fa1035f7128f1d}
+      \strng{authorfullhash}{54abb762154cd169b3fa1035f7128f1d}
+      \strng{authorfullhashraw}{54abb762154cd169b3fa1035f7128f1d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Magnetic Resonance}
+      \field{month}{3}
+      \field{title}{On the present and future of dissolution-DNP}
+      \field{volume}{264}
+      \field{year}{2016}
+      \field{pages}{3\bibrangedash 12}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmr.2016.01.015
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S1090780716000562
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S1090780716000562
+      \endverb
+    \endentry
+    \entry{cryogenic_microwave_design_ref}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=b889940e6a1ae3b3a13b9382cf0e83e7}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Alexander\bibnamedelima B},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=33b84a2b2c4a5ca86504423105a4d880}{%
+           family={Björn\bibnamedelima Corzilius},
+           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Melody\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=857955ddff36b2d482554209bf1147ed}{%
+           family={Mak-Jurkauskas},
+           familyi={M\bibinithyphendelim J\bibinitperiod},
+           given={Loren\bibnamedelima B},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=e50c07d2801352a6633091cbb6ea8f3e}{%
+           family={Vikram},
+           familyi={V\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a76c6e003303634212e7f3490662c7f1}{%
+           family={Bajaj},
+           familyi={B\bibinitperiod},
+           given={Yoh},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1f6caba3cea126c8092342f565ba2535}{%
+           family={Matsuki},
+           familyi={M\bibinitperiod},
+           given={Marina\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{59e52148381d15f2600d4315ba73b3a0}
+      \strng{fullhash}{eb2aff60bcacc889db489bc2e5cd7ad8}
+      \strng{fullhashraw}{eb2aff60bcacc889db489bc2e5cd7ad8}
+      \strng{bibnamehash}{59e52148381d15f2600d4315ba73b3a0}
+      \strng{authorbibnamehash}{59e52148381d15f2600d4315ba73b3a0}
+      \strng{authornamehash}{59e52148381d15f2600d4315ba73b3a0}
+      \strng{authorfullhash}{eb2aff60bcacc889db489bc2e5cd7ad8}
+      \strng{authorfullhashraw}{eb2aff60bcacc889db489bc2e5cd7ad8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{22}
+      \field{title}{Resolution and polarization distribution in cryogenic {DNP/MAS} experiments}
+      \field{volume}{12}
+      \field{year}{2010}
+    \endentry
+    \entry{bebie_hulliger_2000}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=46f3fab5dd1250aa41784e36e4bb8d65}{%
+           family={Bebie},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e482b3cfc4a9c1ce8325ddc2767a009b}{%
+           family={Hulliger},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{0c398bc887cbe10749d9c8761d7440ba}
+      \strng{fullhash}{0c398bc887cbe10749d9c8761d7440ba}
+      \strng{fullhashraw}{0c398bc887cbe10749d9c8761d7440ba}
+      \strng{bibnamehash}{0c398bc887cbe10749d9c8761d7440ba}
+      \strng{authorbibnamehash}{0c398bc887cbe10749d9c8761d7440ba}
+      \strng{authornamehash}{0c398bc887cbe10749d9c8761d7440ba}
+      \strng{authorfullhash}{0c398bc887cbe10749d9c8761d7440ba}
+      \strng{authorfullhashraw}{0c398bc887cbe10749d9c8761d7440ba}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{month}{4}
+      \field{number}{3-4}
+      \field{title}{Thermal equilibrium polarization: a near-surface effect in dipolar-based molecular crystals}
+      \field{volume}{278}
+      \field{year}{2000}
+      \field{pages}{327\bibrangedash 336}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0378-4371(99)00575-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378437199005750?casa_token=WdmqXnlpnu8AAAAA:sKL-1WbHfcjgkBvwZ8MfUcjeffIDmzDJY4P1FTal2CbFzLJ9IMxL3sd32kcYWIXeolK_oDybaw
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378437199005750?casa_token=WdmqXnlpnu8AAAAA:sKL-1WbHfcjgkBvwZ8MfUcjeffIDmzDJY4P1FTal2CbFzLJ9IMxL3sd32kcYWIXeolK_oDybaw
+      \endverb
+    \endentry
+    \entry{ChemRev2022DNP}{article}{}{}
+      \name{author}{13}{}{%
+        {{hash=a7de2890a1e77148bfe6adf4f23f4f29}{%
+           family={Eills},
+           familyi={E\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=09d39b13ef6a6fe2493176d0412e39a0}{%
+           family={Budker},
+           familyi={B\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3fd60e169f65246d20a5962fe129bae0}{%
+           family={Cavagnero},
+           familyi={C\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b7bdd6c37986b8cf1d546c646e754163}{%
+           family={Chekmenev},
+           familyi={C\bibinitperiod},
+           given={Eduard\bibnamedelima Y},
+           giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=6e796bb06091c1674bcc9aaf44b2d0d5}{%
+           family={Elliott},
+           familyi={E\bibinitperiod},
+           given={Stuart\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4d6db2b3fa5873bf28b39298ba2db42e}{%
+           family={Jannin},
+           familyi={J\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0ef433677510556d8eb6150ad4306ccb}{%
+           family={Lesage},
+           familyi={L\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=123c44b9b9df97b23ba716d8f5d45f68}{%
+           family={Matysik},
+           familyi={M\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d0b7aa1d53d9597e9f5f8f4d3b5a76c1}{%
+           family={Meersmann},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=47f0f254a061f4886290ed0d3138090d}{%
+           family={Prisner},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=285d4525f1c81b0be742cfbb85983a6f}{%
+           family={Reimer},
+           familyi={R\bibinitperiod},
+           given={Jeffrey\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b4f23b060b070a294b4fcadd79f5ea11}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Hanming},
+           giveni={H\bibinitperiod}}}%
+        {{hash=da84fe4b1fff0e4f980ce5e05598e159}{%
+           family={Koptyug},
+           familyi={K\bibinitperiod},
+           given={Igor\bibnamedelima V},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{afa8a4dfc0e96bcc53ef59ed5645ca96}
+      \strng{fullhash}{b6a472e30ab06902bc13bdf2a9b0a100}
+      \strng{fullhashraw}{b6a472e30ab06902bc13bdf2a9b0a100}
+      \strng{bibnamehash}{afa8a4dfc0e96bcc53ef59ed5645ca96}
+      \strng{authorbibnamehash}{afa8a4dfc0e96bcc53ef59ed5645ca96}
+      \strng{authornamehash}{afa8a4dfc0e96bcc53ef59ed5645ca96}
+      \strng{authorfullhash}{b6a472e30ab06902bc13bdf2a9b0a100}
+      \strng{authorfullhashraw}{b6a472e30ab06902bc13bdf2a9b0a100}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0009-2665}
+      \field{journaltitle}{Chemical reviews}
+      \field{month}{2}
+      \field{number}{4}
+      \field{title}{Spin Hyperpolarization in Modern Magnetic Resonance}
+      \field{volume}{123}
+      \field{year}{2023}
+      \field{pages}{1417\bibrangedash 1551}
+      \range{pages}{135}
+      \verb{doi}
+      \verb 10.1021/acs.chemrev.2c00534
+      \endverb
+      \verb{urlraw}
+      \verb https://europepmc.org/articles/PMC9951229
+      \endverb
+      \verb{url}
+      \verb https://europepmc.org/articles/PMC9951229
+      \endverb
+    \endentry
+    \entry{ernst_1968}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6cc39b08e881015507cf6517b13301d5}{%
+           family={Ernst},
+           familyi={E\bibinitperiod},
+           given={Richard\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cc39b08e881015507cf6517b13301d5}
+      \strng{fullhash}{6cc39b08e881015507cf6517b13301d5}
+      \strng{fullhashraw}{6cc39b08e881015507cf6517b13301d5}
+      \strng{bibnamehash}{6cc39b08e881015507cf6517b13301d5}
+      \strng{authorbibnamehash}{6cc39b08e881015507cf6517b13301d5}
+      \strng{authornamehash}{6cc39b08e881015507cf6517b13301d5}
+      \strng{authorfullhash}{6cc39b08e881015507cf6517b13301d5}
+      \strng{authorfullhashraw}{6cc39b08e881015507cf6517b13301d5}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Scientific Instruments}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Measurement and Control of Magnetic Field Homogeneity}
+      \field{volume}{39}
+      \field{year}{1968}
+      \field{pages}{998\bibrangedash 1012}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1063/1.1683586
+      \endverb
+    \endentry
+    \entry{feynman_1955}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=aac54ccf9c76aa4ba4310ed1334be7d8}{%
+           family={Feynman},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima P},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{fullhash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{fullhashraw}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{bibnamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authorbibnamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authornamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authorfullhash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authorfullhashraw}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science Direct}
+      \field{title}{Chapter II Application of Quantum Mechanics to Liquid Helium}
+      \field{year}{1955}
+      \field{pages}{17\bibrangedash 53}
+      \range{pages}{37}
+      \verb{doi}
+      \verb https://doi.org/10.1016/s0079-6417(08)60077-3
+      \endverb
+    \endentry
+    \entry{froes_qian_mitsuo_niinomi_2019}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=2c8191f0f5a8fa1d2e2289fb897a2672}{%
+           family={Froes},
+           familyi={F\bibinitperiod},
+           given={F\bibnamedelima H},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7dab66782eac64eabccb13c16b9bd71a}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Ma},
+           giveni={M\bibinitperiod}}}%
+        {{hash=af2a6ca70eedc3e892557370ee8cd4c1}{%
+           family={Niinomi},
+           familyi={N\bibinitperiod},
+           given={Mitsuo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Amsterdam Elsevier}%
+      }
+      \strng{namehash}{3fe986b270f1f3bd5f469440193c32bb}
+      \strng{fullhash}{6060ad3f56d165693f2e54d51d524e93}
+      \strng{fullhashraw}{6060ad3f56d165693f2e54d51d524e93}
+      \strng{bibnamehash}{6060ad3f56d165693f2e54d51d524e93}
+      \strng{authorbibnamehash}{6060ad3f56d165693f2e54d51d524e93}
+      \strng{authornamehash}{3fe986b270f1f3bd5f469440193c32bb}
+      \strng{authorfullhash}{6060ad3f56d165693f2e54d51d524e93}
+      \strng{authorfullhashraw}{6060ad3f56d165693f2e54d51d524e93}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780128158203}
+      \field{title}{Titanium for Consumer Applications : Real World Use of Titanium}
+      \field{year}{2019}
+    \endentry
+    \entry{PET_hyperpolarization_ref}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=091a3340a3744a7d924a23a5b2eab44e}{%
+           family={Gutte},
+           familyi={G\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ef1e37a1605b3a6d6598d0a1eb352db2}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Adam\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=cebdaecf295465fb949f62740557ebb3}{%
+           family={Larsen},
+           familyi={L\bibinitperiod},
+           given={Majbrit\bibnamedelimb M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d2cc783ac07befe80baed873948ff231}{%
+           family={Rahbek},
+           familyi={R\bibinitperiod},
+           given={Sofie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b8a7f5e570439dda80a22cf8af9946b9}{%
+           family={Henriksen},
+           familyi={H\bibinitperiod},
+           given={Sarah\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=15b6d4fca94473c21800cfa52a112780}{%
+           family={Johannesen},
+           familyi={J\bibinitperiod},
+           given={Helle\bibnamedelima H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4216c57644eb5bc45a3770f407bc1925}{%
+           family={Ardenkjaer-Larsen},
+           familyi={A\bibinithyphendelim L\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ba6a19cc2cf337906747a7540a0f43f4}{%
+           family={Kristensen},
+           familyi={K\bibinitperiod},
+           given={Annemarie\bibnamedelima T.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=7d31184764de6e80ab9a7e4576330d1e}{%
+           family={Højgaard},
+           familyi={H\bibinitperiod},
+           given={Liselotte},
+           giveni={L\bibinitperiod}}}%
+        {{hash=baf727fdeb42d6f0859500a480de96f7}{%
+           family={Kjær},
+           familyi={K\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c80bbe24434d6b473d5230d68ca9c3bc}
+      \strng{fullhash}{3e60d78ae3fe035756502efc6573f07a}
+      \strng{fullhashraw}{3e60d78ae3fe035756502efc6573f07a}
+      \strng{bibnamehash}{c80bbe24434d6b473d5230d68ca9c3bc}
+      \strng{authorbibnamehash}{c80bbe24434d6b473d5230d68ca9c3bc}
+      \strng{authornamehash}{c80bbe24434d6b473d5230d68ca9c3bc}
+      \strng{authorfullhash}{3e60d78ae3fe035756502efc6573f07a}
+      \strng{authorfullhashraw}{3e60d78ae3fe035756502efc6573f07a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Nuclear Medicine}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Simultaneous Hyperpolarized 13C-Pyruvate MRI and 18F-FDG PET (HyperPET) in 10 Dogs with Cancer}
+      \field{volume}{56}
+      \field{year}{2015}
+      \field{pages}{1786\bibrangedash 1792}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.2967/jnumed.115.156364
+      \endverb
+      \verb{urlraw}
+      \verb https://jnm.snmjournals.org/content/56/11/1786
+      \endverb
+      \verb{url}
+      \verb https://jnm.snmjournals.org/content/56/11/1786
+      \endverb
+    \endentry
+    \entry{Iannotti1991ss}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f98d3867b9b44c91f05431a70ec9cb40}{%
+           family={Iannotti},
+           familyi={I\bibinitperiod},
+           given={Joseph\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f98d3867b9b44c91f05431a70ec9cb40}
+      \strng{fullhash}{f98d3867b9b44c91f05431a70ec9cb40}
+      \strng{fullhashraw}{f98d3867b9b44c91f05431a70ec9cb40}
+      \strng{bibnamehash}{f98d3867b9b44c91f05431a70ec9cb40}
+      \strng{authorbibnamehash}{f98d3867b9b44c91f05431a70ec9cb40}
+      \strng{authornamehash}{f98d3867b9b44c91f05431a70ec9cb40}
+      \strng{authorfullhash}{f98d3867b9b44c91f05431a70ec9cb40}
+      \strng{authorfullhashraw}{f98d3867b9b44c91f05431a70ec9cb40}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JBJS}
+      \field{title}{Magnetic resonance imaging of the shoulder. Sensitivity, specificity, and predictive value}
+      \field{volume}{73}
+      \field{year}{1991}
+      \field{pages}{17\bibrangedash 29}
+      \range{pages}{13}
+    \endentry
+    \entry{tempo_dnp_ref}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=ac23ff229ddcbd2297884f82beb9b0da}{%
+           family={Jähnig},
+           familyi={J\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=68e21b3a7c1631246f99db95777d71d4}{%
+           family={Himmler},
+           familyi={H\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a18af4ef70fdda6f0f73ee715e634c41}{%
+           family={Kwiatkowski},
+           familyi={K\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=70e3b48d6008fcef7e86ddd4a74ce63e}{%
+           family={Däpp},
+           familyi={D\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c3b8e4012fb1965257ef67d87690c930}{%
+           family={Hunkeler},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c17bb5058257f09c296b6a38740e5fbb}{%
+           family={Kozerke},
+           familyi={K\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=43f778fb18a5c0863d9c996fa4b7b7f3}{%
+           family={Ernst},
+           familyi={E\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{23e10253efeda743f7dbc6e78fe8e060}
+      \strng{fullhash}{35230d1c000e9181087f51890addc5b0}
+      \strng{fullhashraw}{35230d1c000e9181087f51890addc5b0}
+      \strng{bibnamehash}{23e10253efeda743f7dbc6e78fe8e060}
+      \strng{authorbibnamehash}{23e10253efeda743f7dbc6e78fe8e060}
+      \strng{authornamehash}{23e10253efeda743f7dbc6e78fe8e060}
+      \strng{authorfullhash}{35230d1c000e9181087f51890addc5b0}
+      \strng{authorfullhashraw}{35230d1c000e9181087f51890addc5b0}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Magnetic Resonance}
+      \field{month}{4}
+      \field{title}{A spin-thermodynamic approach to characterize spin dynamics in TEMPO-based samples for dissolution DNP at 7T field}
+      \field{volume}{303}
+      \field{year}{2019}
+      \field{pages}{91\bibrangedash 104}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmr.2019.04.012
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1090780719300709?casa_token=kP-dSDmQybkAAAAA:7tFxQ7tPrGalqbEm36uEI2659ZbFviyDgL_TJOTDGiSNiBfmf7FrtCdF4EZdgQRG0GgOjn4B78U
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1090780719300709?casa_token=kP-dSDmQybkAAAAA:7tFxQ7tPrGalqbEm36uEI2659ZbFviyDgL_TJOTDGiSNiBfmf7FrtCdF4EZdgQRG0GgOjn4B78U
+      \endverb
+    \endentry
+    \entry{hyperpolarized_tracers_review}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=d1867e92c4ec376f8c3670478396a1a6}{%
+           family={Johansson},
+           familyi={J\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=46ee310e4c7786cd65a3555b06f839b0}{%
+           family={Olsson},
+           familyi={O\bibinitperiod},
+           given={L.E.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9e5dd8bf0d6e8fd3175f21aca8b964c0}{%
+           family={Månsson},
+           familyi={M\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=96c467de1728ba606daddedb0252a34a}{%
+           family={Petersson},
+           familyi={P\bibinitperiod},
+           given={J.S.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=daedd7a4baafd41fac2e4af0cff15b34}{%
+           family={Golman},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=318e68a64a6568e6e6ff3928b5aa337f}{%
+           family={Ståhlberg},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bfa87e0a1625fd198639f36673fa8bc8}{%
+           family={Wirestam},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{3d7cf5e4c14e9d5b3852fc0302fc6483}
+      \strng{fullhash}{07af51ac8e2c3c9ceaa4c8f6071c6e24}
+      \strng{fullhashraw}{07af51ac8e2c3c9ceaa4c8f6071c6e24}
+      \strng{bibnamehash}{3d7cf5e4c14e9d5b3852fc0302fc6483}
+      \strng{authorbibnamehash}{3d7cf5e4c14e9d5b3852fc0302fc6483}
+      \strng{authornamehash}{3d7cf5e4c14e9d5b3852fc0302fc6483}
+      \strng{authorfullhash}{07af51ac8e2c3c9ceaa4c8f6071c6e24}
+      \strng{authorfullhashraw}{07af51ac8e2c3c9ceaa4c8f6071c6e24}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Magnetic Resonance in Medicine}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{Perfusion assessment with bolus differentiation: A technique applicable to hyperpolarized tracers}
+      \field{volume}{52}
+      \field{year}{2004}
+      \field{pages}{1043\bibrangedash 1051}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1002/mrm.20247
+      \endverb
+    \endentry
+    \entry{larmor_ref}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c6d8b1aea5118299879670708080fe1}{%
+           family={Kittel},
+           familyi={K\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{fullhash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{fullhashraw}{2c6d8b1aea5118299879670708080fe1}
+      \strng{bibnamehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authorbibnamehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authornamehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authorfullhash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authorfullhashraw}{2c6d8b1aea5118299879670708080fe1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{month}{2}
+      \field{number}{4}
+      \field{title}{Interpretation of Anomalous Larmor Frequencies in Ferromagnetic Resonance Experiment}
+      \field{volume}{71}
+      \field{year}{1947}
+      \field{pages}{270\bibrangedash 271}
+      \range{pages}{2}
+      \verb{doi}
+      \verb https://doi.org/10.1103/physrev.71.270.2
+      \endverb
+    \endentry
+    \entry{Kowalska2023MABudget}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ec7a02078292d5d0ef1de3a2735f3af7}{%
+           family={Kowalska},
+           familyi={K\bibinitperiod},
+           given={Magdalena},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \strng{fullhash}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \strng{fullhashraw}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \strng{bibnamehash}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \strng{authorbibnamehash}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \strng{authornamehash}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \strng{authorfullhash}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \strng{authorfullhashraw}{ec7a02078292d5d0ef1de3a2735f3af7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Internal CERN document}
+      \field{note}{CERN EP/ISOLDE internal project definition, available upon request from the author}
+      \field{title}{Enabling novel tracers for MRI: Project Definition for a Compact DNP Setup}
+      \field{year}{2023}
+    \endentry
+    \entry{Kruger2001vh}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=89e6abddb65f1bec2a02efab6349d364}{%
+           family={Krüger},
+           familyi={K\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod}}}%
+        {{hash=dfe4fe5989a91d95452720fc8c26a174}{%
+           family={Glover},
+           familyi={G\bibinitperiod},
+           given={Gary\bibnamedelima H},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{076d8e1bdecc5ecbe8775076fb74f280}
+      \strng{fullhash}{076d8e1bdecc5ecbe8775076fb74f280}
+      \strng{fullhashraw}{076d8e1bdecc5ecbe8775076fb74f280}
+      \strng{bibnamehash}{076d8e1bdecc5ecbe8775076fb74f280}
+      \strng{authorbibnamehash}{076d8e1bdecc5ecbe8775076fb74f280}
+      \strng{authornamehash}{076d8e1bdecc5ecbe8775076fb74f280}
+      \strng{authorfullhash}{076d8e1bdecc5ecbe8775076fb74f280}
+      \strng{authorfullhashraw}{076d8e1bdecc5ecbe8775076fb74f280}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Magnetic Resonance in Medicine: An Official Journal of the International Society for Magnetic Resonance in Medicine}
+      \field{title}{Physiological noise in oxygenation-sensitive magnetic resonance imaging}
+      \field{volume}{46}
+      \field{year}{2001}
+      \field{pages}{631\bibrangedash 637}
+      \range{pages}{7}
+    \endentry
+    \entry{electron_gyromagnetic_ratio_ref}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ae3eb0e35481ca01d38f6c5f18f36c7e}{%
+           family={Louisell},
+           familyi={L\bibinitperiod},
+           given={W\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=ceab07e409199b23086c899884a7a504}{%
+           family={Pidd},
+           familyi={P\bibinitperiod},
+           given={R\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=87267b6142c39dbc4b5199630608d2c3}{%
+           family={Crane},
+           familyi={C\bibinitperiod},
+           given={H\bibnamedelima R},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4e203c17510c86f7d0a86af6b033eb7}
+      \strng{fullhash}{043c2646d01f35c11dcfe3e8d55d5212}
+      \strng{fullhashraw}{043c2646d01f35c11dcfe3e8d55d5212}
+      \strng{bibnamehash}{043c2646d01f35c11dcfe3e8d55d5212}
+      \strng{authorbibnamehash}{043c2646d01f35c11dcfe3e8d55d5212}
+      \strng{authornamehash}{b4e203c17510c86f7d0a86af6b033eb7}
+      \strng{authorfullhash}{043c2646d01f35c11dcfe3e8d55d5212}
+      \strng{authorfullhashraw}{043c2646d01f35c11dcfe3e8d55d5212}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{number}{1}
+      \field{title}{An experimental measurement of the gyromagnetic ratio of the free electron}
+      \field{volume}{94}
+      \field{year}{1954}
+    \endentry
+    \entry{DNP_intro_ref}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=fb313739f402ad6f322704ae50a2d04d}{%
+           family={Maly},
+           familyi={M\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b97c30fd4c17fed56e4f8a0e536339b9}{%
+           family={Debelouchina},
+           familyi={D\bibinitperiod},
+           given={Galia\bibnamedelima T},
+           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=e50c07d2801352a6633091cbb6ea8f3e}{%
+           family={Vikram},
+           familyi={V\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4de0bf510f8d48001618c69459c9e9db}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Chan-Gyu},
+           giveni={C\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=cb143e5afc396f88be6ee5b7353b83c9}{%
+           family={Joo},
+           familyi={J\bibinitperiod},
+           given={Melody\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=94a170398eb9bcc3784fae1c67006782}{%
+           family={Mak-Jurkauskas},
+           familyi={M\bibinithyphendelim J\bibinitperiod},
+           given={Jagadishwar\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{788e82e992ed2500d89bdc2b16240711}
+      \strng{fullhash}{b14f04a0e8162c45045991f4f169c02f}
+      \strng{fullhashraw}{b14f04a0e8162c45045991f4f169c02f}
+      \strng{bibnamehash}{788e82e992ed2500d89bdc2b16240711}
+      \strng{authorbibnamehash}{788e82e992ed2500d89bdc2b16240711}
+      \strng{authornamehash}{788e82e992ed2500d89bdc2b16240711}
+      \strng{authorfullhash}{b14f04a0e8162c45045991f4f169c02f}
+      \strng{authorfullhashraw}{b14f04a0e8162c45045991f4f169c02f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of chemical physics}
+      \field{number}{5}
+      \field{title}{Dynamic nuclear polarization at high magnetic fields}
+      \field{volume}{128}
+      \field{year}{2008}
+    \endentry
+    \entry{manabe_strickler_1964}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ebe65654bf329266a062385fa8fe89ef}{%
+           family={Manabe},
+           familyi={M\bibinitperiod},
+           given={Syukuro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2bcd6b7e3b6b271eee2129f8463298cb}{%
+           family={Strickler},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c45741eefda29dd2c6aa94341914fbb}
+      \strng{fullhash}{2c45741eefda29dd2c6aa94341914fbb}
+      \strng{fullhashraw}{2c45741eefda29dd2c6aa94341914fbb}
+      \strng{bibnamehash}{2c45741eefda29dd2c6aa94341914fbb}
+      \strng{authorbibnamehash}{2c45741eefda29dd2c6aa94341914fbb}
+      \strng{authornamehash}{2c45741eefda29dd2c6aa94341914fbb}
+      \strng{authorfullhash}{2c45741eefda29dd2c6aa94341914fbb}
+      \strng{authorfullhashraw}{2c45741eefda29dd2c6aa94341914fbb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{Thermal Equilibrium of the Atmosphere with a Convective Adjustment}
+      \field{volume}{21}
+      \field{year}{1964}
+      \field{pages}{361\bibrangedash 385}
+      \range{pages}{25}
+      \verb{doi}
+      \verb https://doi.org/10.1175/1520-0469(1964)021%3C0361:teotaw%3E2.0.co;2
+      \endverb
+    \endentry
+    \entry{high_performance_DNP}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=3d272afd290d6accc6951b95a2ac2fc3}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Jiafei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a0b2f06c133a0e50257cc79045bf3ff6}{%
+           family={Akhmetzyanov},
+           familyi={A\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9394decd3cba2cb53290cb4e4327b256}{%
+           family={Ouari},
+           familyi={O\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b8cb7510e43d2859fa49370ae473a980}{%
+           family={Denysenkov},
+           familyi={D\bibinitperiod},
+           given={Vasyl},
+           giveni={V\bibinitperiod}}}%
+        {{hash=318bd7621ed53dc31c0e483243fdcb58}{%
+           family={Corzilius},
+           familyi={C\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8e823be89ec459f738552e5f57e61aab}{%
+           family={Plackmeyer},
+           familyi={P\bibinitperiod},
+           given={Jörn},
+           giveni={J\bibinitperiod}}}%
+        {{hash=57556f28c9011e39930ea0bac28d3192}{%
+           family={Tordo},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c15f93acc6ddef9fca7d3be83f6b5540}{%
+           family={Prisner},
+           familyi={P\bibinitperiod},
+           given={Thomas\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=300f66164b6b5f422919109023b9e60f}{%
+           family={Glaubitz},
+           familyi={G\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d92e1d054eb8b4793de99be153f3e8d3}
+      \strng{fullhash}{3d15bf6501067adc96b00e888d42bd37}
+      \strng{fullhashraw}{3d15bf6501067adc96b00e888d42bd37}
+      \strng{bibnamehash}{d92e1d054eb8b4793de99be153f3e8d3}
+      \strng{authorbibnamehash}{d92e1d054eb8b4793de99be153f3e8d3}
+      \strng{authornamehash}{d92e1d054eb8b4793de99be153f3e8d3}
+      \strng{authorfullhash}{3d15bf6501067adc96b00e888d42bd37}
+      \strng{authorfullhashraw}{3d15bf6501067adc96b00e888d42bd37}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{month}{12}
+      \field{number}{51}
+      \field{title}{Host-Guest Complexes as Water-Soluble High-Performance DNP Polarizing Agents}
+      \field{volume}{135}
+      \field{year}{2013}
+      \field{pages}{19275\bibrangedash 19281}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1021/ja409840y
+      \endverb
+    \endentry
+    \entry{DNP_mechanisms_review}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=6845e4e4e623e026fe235ce521c11699}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Zhenfeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=58399e1ff08ef81f9e02aefc78196f6b}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Sheetal},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7c12c6bb81a430b19d464d25687cbb9c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=02f3956396791e545063886aa8ec1ed6}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Xueqian},
+           giveni={X\bibinitperiod}}}%
+        {{hash=9c03df92eb11356c9ca8d60750185c20}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Kong\bibnamedelima Ooi},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{c40b033f66b2d985ef80fe2860981b56}
+      \strng{fullhash}{a25a7de04e8ba0cc0ca32df7d252d6ca}
+      \strng{fullhashraw}{a25a7de04e8ba0cc0ca32df7d252d6ca}
+      \strng{bibnamehash}{c40b033f66b2d985ef80fe2860981b56}
+      \strng{authorbibnamehash}{c40b033f66b2d985ef80fe2860981b56}
+      \strng{authornamehash}{c40b033f66b2d985ef80fe2860981b56}
+      \strng{authorfullhash}{a25a7de04e8ba0cc0ca32df7d252d6ca}
+      \strng{authorfullhashraw}{a25a7de04e8ba0cc0ca32df7d252d6ca}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{5}
+      \field{number}{24}
+      \field{title}{A unified description for polarization-transfer mechanisms in magnetic resonance in static solids: Cross polarization and DNP}
+      \field{volume}{156}
+      \field{year}{2022}
+      \verb{doi}
+      \verb https://doi.org/10.1063/5.0092265
+      \endverb
+    \endentry
+    \entry{spin_physics_intro_ref}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=3ad4e7046aff11f350cd20224879c53d}{%
+           family={Poole},
+           familyi={P\bibinitperiod},
+           given={Charles\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e19a1c860637f533fd8ff489f1504984}{%
+           family={Farach},
+           familyi={F\bibinitperiod},
+           given={Horacio\bibnamedelima A},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \strng{fullhash}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \strng{fullhashraw}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \strng{bibnamehash}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \strng{authorbibnamehash}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \strng{authornamehash}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \strng{authorfullhash}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \strng{authorfullhashraw}{5ecafa5bbecc77e48ee05e3ecd3680a1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of Spectroscopy}
+      \field{year}{2019}
+      \field{pages}{217\bibrangedash 314}
+      \range{pages}{98}
+    \endentry
+    \entry{hyperpolarized_transfer_constraints_ref}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=1e5d891c2b1596723e429cd00bbb8261}{%
+           family={Prisco},
+           familyi={P\bibinitperiod},
+           given={Nathan\bibnamedelima A},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=204adefb6b0e8ee5484d286fc498a363}{%
+           family={Arthur},
+           familyi={A\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=521d6871ac15f6194bfa6758dc9f6038}{%
+           family={Pinon},
+           familyi={P\bibinitperiod},
+           given={Lyndon},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1f981a00409db628947fb88d015995a7}{%
+           family={Emsley},
+           familyi={E\bibinitperiod},
+           given={Bradley\bibnamedelima F},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce49aee7b6f0cb56a0d71e93513da73d}
+      \strng{fullhash}{91524103ccf5058fa5fe8ed65abd26e0}
+      \strng{fullhashraw}{91524103ccf5058fa5fe8ed65abd26e0}
+      \strng{bibnamehash}{ce49aee7b6f0cb56a0d71e93513da73d}
+      \strng{authorbibnamehash}{ce49aee7b6f0cb56a0d71e93513da73d}
+      \strng{authornamehash}{ce49aee7b6f0cb56a0d71e93513da73d}
+      \strng{authorfullhash}{91524103ccf5058fa5fe8ed65abd26e0}
+      \strng{authorfullhashraw}{91524103ccf5058fa5fe8ed65abd26e0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{2}
+      \field{title}{Scaling analyses for hyperpolarization transfer across a spin-diffusion barrier and into bulk solid media}
+      \field{volume}{23}
+      \field{year}{2021}
+      \field{pages}{1006\bibrangedash 1020}
+      \range{pages}{15}
+    \endentry
+    \entry{cross_effect_ref}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=8d08aff8bcc2a53f26df0f8c07c9d417}{%
+           family={Shimon},
+           familyi={S\bibinitperiod},
+           given={Daphna},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ffecb307fa57ded436073daa7ef8ec1b}{%
+           family={Hovav},
+           familyi={H\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a8e08523da2f540074c43e0c3d09c93e}{%
+           family={Feintuch},
+           familyi={F\bibinitperiod},
+           given={Akiva},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e931cf75b157e2db3dfbd3b76238f6fd}{%
+           family={Goldfarb},
+           familyi={G\bibinitperiod},
+           given={Daniella},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6d80f751c5b11f15bdf8c02397e67d65}{%
+           family={Vega},
+           familyi={V\bibinitperiod},
+           given={Shimon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{40ee4c41da533412d9f4bc8a397a86e1}
+      \strng{fullhash}{bbb8e0aae082e91f9d79528693b25967}
+      \strng{fullhashraw}{bbb8e0aae082e91f9d79528693b25967}
+      \strng{bibnamehash}{40ee4c41da533412d9f4bc8a397a86e1}
+      \strng{authorbibnamehash}{40ee4c41da533412d9f4bc8a397a86e1}
+      \strng{authornamehash}{40ee4c41da533412d9f4bc8a397a86e1}
+      \strng{authorfullhash}{bbb8e0aae082e91f9d79528693b25967}
+      \strng{authorfullhashraw}{bbb8e0aae082e91f9d79528693b25967}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{16}
+      \field{title}{Dynamic nuclear polarization in the solid state: a transition between the cross effect and the solid effect}
+      \field{volume}{14}
+      \field{year}{2012}
+      \field{pages}{5729\bibrangedash 5743}
+      \range{pages}{15}
+    \endentry
+    \entry{relaxation_ref}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=c128e601b4739fb9e072c2c69f848bd2}{%
+           family={Standley},
+           familyi={S\bibinitperiod},
+           given={K.\bibnamedelimi J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5a37adf48ac697382b3e2acd2b24350f}{%
+           family={Vaughan},
+           familyi={V\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \strng{fullhash}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \strng{fullhashraw}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \strng{bibnamehash}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \strng{authorbibnamehash}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \strng{authornamehash}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \strng{authorfullhash}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \strng{authorfullhashraw}{f2f1ad1907ff543997ceefaf2e3ed157}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781489962515}
+      \field{title}{Electron Spin Relaxation Phenomena in Solids}
+      \field{year}{1969}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-1-4899-6539-4
+      \endverb
+    \endentry
+    \entry{wallenberger_bingham_2010}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=bcd6937d4e68416db5af7289427a6923}{%
+           family={Wallenberger},
+           familyi={W\bibinitperiod},
+           given={Frederick\bibnamedelima T},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=eebc19e51cb6a3ad6c57767160a65be3}{%
+           family={Bingham},
+           familyi={B\bibinitperiod},
+           given={Paul\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9d995fb35e689a1da294ee9e26acd7c0}
+      \strng{fullhash}{9d995fb35e689a1da294ee9e26acd7c0}
+      \strng{fullhashraw}{9d995fb35e689a1da294ee9e26acd7c0}
+      \strng{bibnamehash}{9d995fb35e689a1da294ee9e26acd7c0}
+      \strng{authorbibnamehash}{9d995fb35e689a1da294ee9e26acd7c0}
+      \strng{authornamehash}{9d995fb35e689a1da294ee9e26acd7c0}
+      \strng{authorfullhash}{9d995fb35e689a1da294ee9e26acd7c0}
+      \strng{authorfullhashraw}{9d995fb35e689a1da294ee9e26acd7c0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Springer eBooks}
+      \field{month}{1}
+      \field{title}{Fiberglass and Glass Technology}
+      \field{year}{2010}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-1-4419-0736-3
+      \endverb
+    \endentry
+    \entry{solid_effect_ref}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3e632bccb38c596da47fc78b296e08ca}{%
+           family={Wenckebach},
+           familyi={W\bibinitperiod},
+           given={W.\bibnamedelimi T.},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{3e632bccb38c596da47fc78b296e08ca}
+      \strng{fullhash}{3e632bccb38c596da47fc78b296e08ca}
+      \strng{fullhashraw}{3e632bccb38c596da47fc78b296e08ca}
+      \strng{bibnamehash}{3e632bccb38c596da47fc78b296e08ca}
+      \strng{authorbibnamehash}{3e632bccb38c596da47fc78b296e08ca}
+      \strng{authornamehash}{3e632bccb38c596da47fc78b296e08ca}
+      \strng{authorfullhash}{3e632bccb38c596da47fc78b296e08ca}
+      \strng{authorfullhashraw}{3e632bccb38c596da47fc78b296e08ca}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Magnetic Resonance}
+      \field{month}{8}
+      \field{number}{3-4}
+      \field{title}{The Solid Effect}
+      \field{volume}{34}
+      \field{year}{2008}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s00723-008-0121-9
+      \endverb
+    \endentry
+    \entry{thermal_mixing_ref}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=54acb87cfc89402b0e80294318f3ce38}{%
+           family={Wenckebach},
+           familyi={W\bibinitperiod},
+           given={W.\bibnamedelimi Th.},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{54acb87cfc89402b0e80294318f3ce38}
+      \strng{fullhash}{54acb87cfc89402b0e80294318f3ce38}
+      \strng{fullhashraw}{54acb87cfc89402b0e80294318f3ce38}
+      \strng{bibnamehash}{54acb87cfc89402b0e80294318f3ce38}
+      \strng{authorbibnamehash}{54acb87cfc89402b0e80294318f3ce38}
+      \strng{authornamehash}{54acb87cfc89402b0e80294318f3ce38}
+      \strng{authorfullhash}{54acb87cfc89402b0e80294318f3ce38}
+      \strng{authorfullhashraw}{54acb87cfc89402b0e80294318f3ce38}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Magnetic Resonance}
+      \field{month}{4}
+      \field{number}{7}
+      \field{title}{Electron Spin-Spin Interactions in DNP: Thermal Mixing vs. the Cross Effect}
+      \field{volume}{52}
+      \field{year}{2021}
+      \field{pages}{731\bibrangedash 748}
+      \range{pages}{18}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s00723-021-01335-0
+      \endverb
+    \endentry
+    \entry{widrow_ryu_schleicher_subramanian_tsagas_treumann_2011}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a79295f8fe3095f46f5644ff55095d20}{%
+           family={Widrow},
+           familyi={W\bibinitperiod},
+           given={Lawrence\bibnamedelima M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8ad803a636f3b964722c48254d9762d0}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={Dongsu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1e76372067022c503980261b7f62e47b}{%
+           family={Schleicher},
+           familyi={S\bibinitperiod},
+           given={Dominik\bibnamedelimb R.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ae2ebbe5bb8c291355dd4835cc599e7c}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={Kandaswamy},
+           giveni={K\bibinitperiod}}}%
+        {{hash=792494f107ad28905575c2ceb1f9e69d}{%
+           family={Tsagas},
+           familyi={T\bibinitperiod},
+           given={Christos\bibnamedelima G.},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1d8f45c1efc4c887d9b30a0aa037826a}{%
+           family={Treumann},
+           familyi={T\bibinitperiod},
+           given={Rudolf\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f35b8a229ecf455d952fc2e86b512dd6}
+      \strng{fullhash}{20f31e0ac4c035c3280ac439b4560ad9}
+      \strng{fullhashraw}{20f31e0ac4c035c3280ac439b4560ad9}
+      \strng{bibnamehash}{f35b8a229ecf455d952fc2e86b512dd6}
+      \strng{authorbibnamehash}{f35b8a229ecf455d952fc2e86b512dd6}
+      \strng{authornamehash}{f35b8a229ecf455d952fc2e86b512dd6}
+      \strng{authorfullhash}{20f31e0ac4c035c3280ac439b4560ad9}
+      \strng{authorfullhashraw}{20f31e0ac4c035c3280ac439b4560ad9}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Space Science Reviews}
+      \field{month}{10}
+      \field{number}{1-4}
+      \field{title}{The First Magnetic Fields}
+      \field{volume}{166}
+      \field{year}{2011}
+      \field{pages}{37\bibrangedash 70}
+      \range{pages}{34}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s11214-011-9833-5
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1109.4052.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1109.4052.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

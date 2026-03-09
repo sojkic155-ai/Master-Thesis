@@ -1,103 +1,102 @@
 \xpg@aux {}{english}
 \contentsline {section}{List of abbreviations}{20}{section*.2}%
-\contentsline {chapter}{\numberline {1}Introduction}{21}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivation and Problem Statement}{21}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Project Background}{21}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Reader Guidance}{22}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Objectives and Scope}{23}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Target Requirements and Design Specifications}{24}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Thesis Structure}{25}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Theoretical and Technological Background}{26}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Magnetic Resonance Imaging Sensitivity and Polarization}{26}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Intuitive Picture of Net Magnetization (Beer Analogy)}{27}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Thermal Equilibrium Polarization}{27}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Spin-Lattice Relaxation and Time Constraints}{28}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Principles of Dynamic Nuclear Polarization}{29}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}DNP Mechanisms Relevant for Solid Samples}{30}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Microwave Irradiation at Cryogenic Temperature}{30}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Polarization Build-Up and Expected Enhancement}{31}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}System-Level Requirements for a Compact DNP Setup}{32}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Magnetic Field Strength and Homogeneity Requirements}{32}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Cryogenic Temperature Requirements}{33}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Microwave Frequency and Power Requirements}{33}{subsection.2.3.3}%
-\contentsline {chapter}{\numberline {3}System Requirements and Design Constraints}{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Use Case and Operational Scenarios}{35}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Geometrical and Integration Constraints}{36}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Insert Envelope and Interfaces}{37}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Compatibility With Dewar/Cryostat Infrastructure}{37}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Functional Requirements}{38}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Sample Handling and Target Region}{38}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Vacuum and Helium-Tightness Requirements}{39}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Safety and Operational Limits}{39}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Verification Strategy}{40}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Superconducting Magnet Design}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Design Rationale and Target Specifications}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Solenoid Geometry and Winding Concept}{41}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Coil Geometry Definition}{41}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Conductor Selection and Current Density Constraints}{41}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Magnetic Field Simulation and Homogeneity Evaluation}{41}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Simulation Setup and Assumptions}{41}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Homogeneity Metrics and Evaluation Volume}{41}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Results and Sensitivity to Tolerances}{41}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Mechanical and Cryogenic Considerations}{41}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Forces, Supports, and Quench Considerations}{41}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Integration With Cryostat and Current Leads}{41}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Microwave Chamber Development}{42}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Functional Role and Design Targets}{42}{section.5.1}%
-\contentsline {section}{\numberline {5.2}RF Architecture and Interfaces}{42}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Waveguide Interface and Transitions}{42}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Coupling Strategy and Mode Considerations}{42}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Mechanical Design and CAD Implementation}{42}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Key Dimensions, Tolerances, and Materials}{42}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Manufacturability and Assembly Constraints}{42}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Electromagnetic Simulation and Power Distribution}{42}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Simulation Setup, Boundary Conditions, and Meshing}{42}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Field Uniformity Metrics in Sample Region}{42}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Losses, Heating, and Material Selection Impact}{42}{subsection.5.4.3}%
-\contentsline {chapter}{\numberline {6}Cryogenic, Vacuum, and Mechanical Integration}{43}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Cryogenic Concept and Temperature Stages}{43}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Heat Loads and Thermal Budget}{43}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Thermal Anchoring and Wiring/Feedthrough Strategy}{43}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Vacuum Interfaces and Sealing Strategy}{43}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Helium-Tightness and Leak Testing Approach}{43}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Materials, Surface Treatment, and Cleanliness}{43}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Mechanical Support, Alignment, and Assembly Procedure}{43}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Tolerance Stack-Up and Alignment Features}{43}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Serviceability and Modular Replacement}{43}{subsection.6.3.2}%
-\contentsline {chapter}{\numberline {7}Automation and Control System}{44}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Control Objectives and System Architecture}{44}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Instrumentation: Sensors and Readout}{44}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Temperature Monitoring}{44}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Pressure/Vacuum Monitoring}{44}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Microwave Source Monitoring and Interlocks}{44}{subsection.7.2.3}%
-\contentsline {section}{\numberline {7.3}Actuation and Interfaces}{44}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Heaters and Power Drivers}{44}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Valves, Pumps, and Pneumatic/Electrical Interfaces}{44}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Software Concept and Operational States}{44}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}State Machine and Safety Interlocks}{44}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Data Logging and Traceability}{44}{subsection.7.4.2}%
-\contentsline {chapter}{\numberline {8}Prototype Implementation and Verification}{45}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Prototype Build and Assembly Summary}{45}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Subsystem Tests}{45}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Magnetic Field Mapping and Homogeneity Verification}{45}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Microwave Line and Cavity Characterization}{45}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Cryogenic Cooldown Tests and Thermal Performance}{45}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Vacuum and Leak Tests}{45}{subsection.8.2.4}%
-\contentsline {section}{\numberline {8.3}System-Level Integration Tests}{45}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}End-to-End Operational Procedure (Dry Run)}{45}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Failure Modes Observed and Mitigations}{45}{subsection.8.3.2}%
-\contentsline {chapter}{\numberline {9}Results and Performance Evaluation}{46}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Achieved Specifications Versus Requirements}{46}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Discussion of Key Engineering Trade-Offs}{46}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Limitations of the Current Prototype}{46}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Discussion and Future Work}{47}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Lessons Learned During Development}{47}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Recommended Design Improvements}{47}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Magnet and Homogeneity Improvements}{47}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}Microwave Uniformity and Loss Reduction}{47}{subsection.10.2.2}%
-\contentsline {subsection}{\numberline {10.2.3}Cryogenic Robustness and Operational Simplification}{47}{subsection.10.2.3}%
-\contentsline {subsection}{\numberline {10.2.4}Automation, Safety, and User Workflow Enhancements}{47}{subsection.10.2.4}%
-\contentsline {section}{\numberline {10.3}Path Toward Experimental Polarization Demonstration}{47}{section.10.3}%
-\contentsline {chapter}{\numberline {11}Conclusion}{48}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Summary of Contributions}{48}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Outlook}{48}{section.11.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{24}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation and Problem Statement}{25}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Project Background}{26}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Reader Guidance}{28}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Objectives and Scope}{28}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Target Requirements and Design Specifications}{29}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Theoretical and Technological Background}{30}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Magnetic Resonance Imaging Sensitivity and Polarization}{30}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Intuitive Picture of Net Magnetization}{31}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Thermal Equilibrium Polarization}{32}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Spin-Lattice Relaxation and Time Constraints}{33}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Principles of Dynamic Nuclear Polarization}{33}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}DNP Mechanisms Relevant for Solid Samples}{34}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Microwave Irradiation at Cryogenic Temperature}{35}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Evaporative Cooling and Reaching \SIrange {1}{1.5}{\kelvin }}{35}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Polarization Build-Up and Expected Enhancement}{36}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}System Requirements and Design Constraints}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Design Drivers and Baseline Operating Point}{37}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Target Requirements and System Boundary Conditions}{37}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Selection of \SI {2.5}{\tesla } @ \SI {70}{\giga \hertz }}{38}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Rationale for Cryogenic Temperature as Low as Possible}{39}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Use Case and Operational Scenarios}{39}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Geometrical and Integration Constraints}{40}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Target Sample Formulations and External Collaboration}{42}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Verification Strategy}{43}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Superconducting Magnet Design}{44}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design Rationale and Target Specifications}{44}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Solenoid Geometry and Winding Concept}{45}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Coil Geometry Definition}{46}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Conductor Selection and Current Density Constraints}{48}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Magnetic Field Simulation and Homogeneity Evaluation}{49}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Simulation Setup and Assumptions}{49}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Field Maps and Qualitative Assessment}{49}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Homogeneity Metrics and Evaluation Procedure}{50}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Results and Sensitivity to Tolerances}{52}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Coil Support Manufacturing and Winding Procedure}{52}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Fiberglass Support for Cryogenic Operation}{53}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Winding and Layer-by-Layer Impregnation}{54}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Mechanical and Cryogenic Considerations}{55}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Forces, Supports, and Quench Considerations}{56}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Integration With Cryostat and Current Leads}{56}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Microwave Chamber Development}{58}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Functional Role and Design Targets}{58}{section.5.1}%
+\contentsline {section}{\numberline {5.2}RF Architecture and Interfaces}{58}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Waveguide Interface and Transitions}{58}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Coupling Strategy and Mode Considerations}{58}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Mechanical Design and CAD Implementation}{58}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Key Dimensions, Tolerances, and Materials}{58}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Manufacturability and Assembly Constraints}{58}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Electromagnetic Simulation and Power Distribution}{58}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Simulation Setup, Boundary Conditions, and Meshing}{58}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Field Uniformity Metrics in Sample Region}{58}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Losses, Heating, and Material Selection Impact}{58}{subsection.5.4.3}%
+\contentsline {chapter}{\numberline {6}Cryogenic, Vacuum, and Mechanical Integration}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Cryogenic Concept and Temperature Stages}{59}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Heat Loads and Thermal Budget}{59}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Thermal Anchoring and Wiring/Feedthrough Strategy}{59}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Vacuum Interfaces and Sealing Strategy}{59}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Helium-Tightness and Leak Testing Approach}{59}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Materials, Surface Treatment, and Cleanliness}{59}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Mechanical Support, Alignment, and Assembly Procedure}{59}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Tolerance Stack-Up and Alignment Features}{59}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Serviceability and Modular Replacement}{59}{subsection.6.3.2}%
+\contentsline {chapter}{\numberline {7}Automation and Control System}{60}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Control Objectives and System Architecture}{60}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Instrumentation: Sensors and Readout}{60}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Temperature Monitoring}{60}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Pressure/Vacuum Monitoring}{60}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Microwave Source Monitoring and Interlocks}{60}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Actuation and Interfaces}{60}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Heaters and Power Drivers}{60}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Valves, Pumps, and Pneumatic/Electrical Interfaces}{60}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Software Concept and Operational States}{60}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}State Machine and Safety Interlocks}{60}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Data Logging and Traceability}{60}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}Prototype Implementation and Verification}{61}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Prototype Build and Assembly Summary}{61}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Subsystem Tests}{61}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Magnetic Field Mapping and Homogeneity Verification}{61}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Microwave Line and Cavity Characterization}{61}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Cryogenic Cooldown Tests and Thermal Performance}{61}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Vacuum and Leak Tests}{61}{subsection.8.2.4}%
+\contentsline {section}{\numberline {8.3}System-Level Integration Tests}{61}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}End-to-End Operational Procedure (Dry Run)}{61}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Failure Modes Observed and Mitigations}{61}{subsection.8.3.2}%
+\contentsline {chapter}{\numberline {9}Results and Performance Evaluation}{62}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Achieved Specifications Versus Requirements}{62}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Discussion of Key Engineering Trade-Offs}{62}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Limitations of the Current Prototype}{62}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Discussion and Future Work}{63}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Lessons Learned During Development}{63}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Recommended Design Improvements}{63}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Magnet and Homogeneity Improvements}{63}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Microwave Uniformity and Loss Reduction}{63}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Cryogenic Robustness and Operational Simplification}{63}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}Automation, Safety, and User Workflow Enhancements}{63}{subsection.10.2.4}%
+\contentsline {section}{\numberline {10.3}Path Toward Experimental Polarization Demonstration}{63}{section.10.3}%
+\contentsline {chapter}{\numberline {11}Conclusion}{64}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Summary of Contributions}{64}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Outlook}{64}{section.11.2}%

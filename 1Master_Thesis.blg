@@ -1,0 +1,33 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is '1Master_Thesis.blg'
+[73] biber-MSWIN64:342> INFO - === 
+[100] Biber.pm:421> INFO - Reading '1Master_Thesis.bcf'
+[186] Biber.pm:1002> INFO - Found 29 citekeys in bib section 0
+[196] Biber.pm:4487> INFO - Processing section 0
+[204] Biber.pm:4678> INFO - Looking for bibtex file 'refTULTHESIS.bib' for section 0
+[243] bibtex.pm:1713> INFO - LaTeX decoding ...
+[276] bibtex.pm:1519> INFO - Found BibTeX data source 'refTULTHESIS.bib'
+[427] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[427] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[427] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[427] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[449] bbl.pm:676> INFO - Writing '1Master_Thesis.bbl' with encoding 'UTF-8'
+[465] bbl.pm:779> INFO - Output to 1Master_Thesis.bbl
+[465] Biber.pm:132> WARN - Duplicate entry key: 'cryogenic_microwave_design_ref' in file 'refTULTHESIS.bib', skipping ...
+[465] Biber.pm:132> WARN - legacy month field 'Mar' in entry 'dissolution_dnp_workflow_ref' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Dec' in entry 'high_performance_DNP' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'widrow_ryu_schleicher_subramanian_tsagas_treumann_2011' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'February' in entry 'ChemRev2022DNP' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'bebie_hulliger_2000' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'manabe_strickler_1964' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Mar' in entry 'abragam_goldman_1978' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'May' in entry 'DNP_mechanisms_review' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'solid_effect_ref' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'thermal_mixing_ref' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Feb' in entry 'larmor_ref' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'hyperpolarized_tracers_review' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Nov' in entry 'PET_hyperpolarization_ref' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'tempo_dnp_ref' is not an integer - this will probably not sort properly.
+[465] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'ernst_1968' is not an integer - this will probably not sort properly.
+[466] Biber.pm:132> WARN - legacy month field 'Jan' in entry 'wallenberger_bingham_2010' is not an integer - this will probably not sort properly.
+[466] Biber.pm:134> INFO - WARNINGS: 17
